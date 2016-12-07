@@ -35,9 +35,9 @@
             {{-- Include Sidebar From The Sidebar Partial --}}
             @include('pages.offers.offerSidebar')
                 <div class="offers pull-right">
-                    <div class="selected-offer">
-                        <img src="//cdn.grabbthedeal.in/assets/img/categories/food-beverage-rect.jpg')}}">
-                    </div>
+                    {{--<div class="selected-offer">--}}
+                        {{--<img src="//cdn.grabbthedeal.in/assets/img/categories/food-beverage-rect.jpg')}}">--}}
+                    {{--</div>--}}
                     <div class="showing-offers pull-left">
                         <p class="showing-offers-count-page">Showing <span class="ion-android-remove"></span><span class="ion-android-remove"></span> {{count($offers)}} of {{$offers_count}} offers</p>
                     </div>
