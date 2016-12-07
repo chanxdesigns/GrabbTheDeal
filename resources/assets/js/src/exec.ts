@@ -185,7 +185,7 @@
     // See more offer details
     $('.see-more-text').click(function (e: Event) {
         e.preventDefault();
-        var elem = $(this).parents('.offer-desc');
+        var elem = $(this).parent().parent();
         if (elem.find('.less').css('display') === "block") {
             elem.find('.less').hide();
             elem.find('.more').show();

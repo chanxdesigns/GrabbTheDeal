@@ -20,7 +20,8 @@
                 </div>
                 <div class="center-tab pull-left">
                     <h3 class="header-text">{{$store->store_name}} Coupons, Deals and Offers</h3>
-                    <p class="body-text">@if (str_word_count($store->store_details) > 100) {!! join(" ",array_slice(explode(' ', html_entity_decode($store->store_details)),0,99)) !!} ... <a href="#" class="see-more-text pull-right">See More</a>@else {!! html_entity_decode($store->store_details) !!} @endif</p>
+                    <div class="body-text less">@if (str_word_count($store->store_details) > 50) {!! join(" ",array_slice(explode(' ', html_entity_decode($store->store_details)),0,49)) !!} ... <a href="#" class="see-more-text pull-right">See More</a>@else {!! html_entity_decode($store->store_details) !!} @endif</div>
+                    <div class="body-text more">{!! html_entity_decode($store->store_details) !!} <a href="#" class="see-more-text pull-right">See Less</a></div>
                 </div>
                 <div class="right-tab pull-right">
                         <ul class="breadcrumb-panel pull-right">

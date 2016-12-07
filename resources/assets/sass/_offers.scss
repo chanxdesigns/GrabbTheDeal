@@ -61,8 +61,22 @@
       line-height: 24px;
       color: $brand-gray;
       font-size: 14px;
+      &.more {
+        display: none;
+      }
+      .see-more-text {
+        color: white;
+        text-decoration: none;
+      }
       ul {
-
+        margin: 5px 0 0 30px;
+        padding: 0;
+        li {
+          margin: 0 0 5px 0;
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
       }
     }
   }
@@ -324,6 +338,18 @@
     color: lighten($brand-black,50%);
     line-height: 22px;
     font-size: 14px;
+  }
+  ul {
+    margin: 5px 0 0 30px;
+    padding: 0;
+    li {
+      margin: 0 0 5px 0;
+      font-size: 14px;
+      color: lighten($brand-black,50%);
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
   }
 }
 

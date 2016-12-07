@@ -911,7 +911,8 @@ var GTDLib = {
     });
     $('.see-more-text').click(function (e) {
         e.preventDefault();
-        var elem = $(this).parents('.offer-desc');
+        var elem = $(this).parent().parent();
+        console.log(elem);
         if (elem.find('.less').css('display') === "block") {
             elem.find('.less').hide();
             elem.find('.more').show();

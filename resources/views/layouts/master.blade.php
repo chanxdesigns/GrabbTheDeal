@@ -19,7 +19,8 @@
     <link rel="stylesheet" type="text/css" href="//cdn.grabbthedeal.in/assets/css/perfect-scrollbar.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.grabbthedeal.in/assets/css/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.grabbthedeal.in/assets/css/owl.theme.min.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.grabbthedeal.in/assets/css/styles.min.css">
+    {{--<link rel="stylesheet" type="text/css" href="//cdn.grabbthedeal.in/assets/css/styles.min.css">--}}
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/styles.css')}}">
 
     <!-- Google Analytics -->
     <script>
@@ -238,6 +239,7 @@
 <script src="//cdn.grabbthedeal.in/assets/js/bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js"></script>
 <script src="//cdn.grabbthedeal.in/assets/js/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
 <script src="//cdn.grabbthedeal.in/assets/js/modernizr-output.js"></script>
-<script src="//cdn.grabbthedeal.in/assets/js/build/app.min.js"></script>
+{{--<script src="//cdn.grabbthedeal.in/assets/js/build/app.min.js"></script>--}}
+<script src="{{asset('assets/js/build/app.min.js')}}"></script>
 </body>
 </html>

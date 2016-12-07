@@ -1643,6 +1643,18 @@ header {
       line-height: 24px;
       color: #F1F1F1;
       font-size: 14px; }
+      .top-panel .center-tab .body-text.more {
+        display: none; }
+      .top-panel .center-tab .body-text .see-more-text {
+        color: white;
+        text-decoration: none; }
+      .top-panel .center-tab .body-text ul {
+        margin: 5px 0 0 30px;
+        padding: 0; }
+        .top-panel .center-tab .body-text ul li {
+          margin: 0 0 5px 0; }
+          .top-panel .center-tab .body-text ul li:last-of-type {
+            margin-bottom: 0; }
   .top-panel .right-tab {
     width: 180px; }
     .top-panel .right-tab .breadcrumb-panel {
@@ -1858,6 +1870,15 @@ header {
     color: gray;
     line-height: 22px;
     font-size: 14px; }
+  .store-footer-details ul {
+    margin: 5px 0 0 30px;
+    padding: 0; }
+    .store-footer-details ul li {
+      margin: 0 0 5px 0;
+      font-size: 14px;
+      color: gray; }
+      .store-footer-details ul li:last-of-type {
+        margin-bottom: 0; }
 
 .offer-redirect-wrapper, .store-redirect-wrapper {
   margin: 80px auto;
