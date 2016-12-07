@@ -12,7 +12,7 @@
                 <p class="sub-title">
                     <strong>Need Help! We are here to help you.</strong><br>
                 </p>
-                <form class="contact-form" id="contact-form" method="post" action="{{url('/contact/send')}}">
+                <form class="contact-form" id="contact-form" method="post" action="{{secure_url('/contact/send')}}">
                     {{ csrf_field() }}
                     <div class="form-group">
                         <div class="label">Name</div>

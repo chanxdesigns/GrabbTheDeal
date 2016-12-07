@@ -13,7 +13,7 @@
             <div class="container">
                 <div class="left-tab pull-left">
                     <div class="main-image-wrapper">
-                        <img class="main-image" src="{{asset($store->store_logo)}}">
+                        <img class="main-image" src="//cdn.grabbthedeal.in/{{$store->store_logo}}">
                     </div>
                     <p class="subtitle-text">{{$offers_count}} offers available</p>
                     <a href="{{secure_url('/store-redirect',$store->store_id)}}" title="Shop from {{strtoupper($store->store_name)}} now" class="button primary outline">SHOP NOW</a>
