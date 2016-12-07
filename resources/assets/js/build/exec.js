@@ -112,7 +112,7 @@
         var bgColor = "#144e76";
     }
     $('.top-panel').css({
-        background: imgUrl ? "url(" + imgUrl + ") no-repeat" : bgColor,
+        background: imgUrl ? "url(" + window.location.protocol + "//cdn.grabbthedeal.in/" + imgUrl + ") no-repeat" : bgColor,
         backgroundSize: 'cover'
     });
     $('.see-more-text').click(function (e) {
@@ -128,8 +128,8 @@
         }
     });
     GTDLib.popupBoxSizing('.popup-store-nav-body');
+    $('.stores-list').click(GTDLib.showStorePopup);
     $('.stores-filter').change(GTDLib.updateStoresAndCategories);
-    $('.stores').click(GTDLib.showStorePopup);
     $('.faq-question-text').click(GTDLib.faqToggle);
     $('#contact-form').submit(GTDLib.submitContactForm);
     $('.menu-link').click(GTDLib.switchTab());

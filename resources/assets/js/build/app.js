@@ -294,7 +294,7 @@ var GTDLib = {
                 },
                 beforeSend: this.beforeSend,
                 data: $.param(data)
-            }, url = "http://" + window.location.host + "/login";
+            }, url = window.location.protocol + "//" + window.location.host + "/login";
             var that = this;
             $.ajax(url, options)
                 .done(function (res) {
@@ -791,7 +791,6 @@ var GTDLib = {
         });
     }
 };
-console.log(GTDLib);
 //# sourceMappingURL=lib.js.map;
 (function (GTDLib) {
     $(window).on("load", GTDLib.bootstrap());
@@ -907,7 +906,7 @@ console.log(GTDLib);
         var bgColor = "#144e76";
     }
     $('.top-panel').css({
-        background: imgUrl ? "url(" + imgUrl + ") no-repeat" : bgColor,
+        background: imgUrl ? "url(" + window.location.protocol + "//cdn.grabbthedeal.in/" + imgUrl + ") no-repeat" : bgColor,
         backgroundSize: 'cover'
     });
     $('.see-more-text').click(function (e) {
@@ -923,8 +922,8 @@ console.log(GTDLib);
         }
     });
     GTDLib.popupBoxSizing('.popup-store-nav-body');
+    $('.stores-list').click(GTDLib.showStorePopup);
     $('.stores-filter').change(GTDLib.updateStoresAndCategories);
-    $('.stores').click(GTDLib.showStorePopup);
     $('.faq-question-text').click(GTDLib.faqToggle);
     $('#contact-form').submit(GTDLib.submitContactForm);
     $('.menu-link').click(GTDLib.switchTab());

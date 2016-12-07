@@ -297,7 +297,7 @@
                                         <option value="neft">NEFT</option>
                                     </select>
                                     <input type="submit" id="withdraw-submit" value="WITHDRAW NOW" @if (empty($user->bank_account_name) || empty($user->bank_account_number) || empty($user->bank_name) || empty($user->bank_ifsc_code) || empty($user->bank_address) || !$user->validated) disabled @endif>
-                                    <img class="loader2" src="/assets/img/loader-2.gif">
+                                    <img class="loader2" src="//cdn.grabbthedeal.in/assets/img/loader-2.gif">
                                 </form>
                                 <span class="small failed"></span>
                             </div>

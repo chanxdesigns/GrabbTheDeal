@@ -294,7 +294,7 @@ var GTDLib = {
                 },
                 beforeSend: this.beforeSend,
                 data: $.param(data)
-            }, url = "http://" + window.location.host + "/login";
+            }, url = window.location.protocol + "//" + window.location.host + "/login";
             var that = this;
             $.ajax(url, options)
                 .done(function (res) {
@@ -791,5 +791,4 @@ var GTDLib = {
         });
     }
 };
-console.log(GTDLib);
 //# sourceMappingURL=lib.js.map

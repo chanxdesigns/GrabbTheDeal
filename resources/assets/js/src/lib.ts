@@ -475,7 +475,7 @@ let GTDLib:GTDLibInterface = {
                     data: $.param(data)
                 },
                 // POST URL
-                url = "http://"+window.location.host + "/login";
+                url = window.location.protocol + "//" + window.location.host + "/login";
 
             // Hijack this scope
             var that = this;
@@ -1102,5 +1102,3 @@ let GTDLib:GTDLibInterface = {
 
 // HomePage Slider
 //GTDLib.
-
-console.log(GTDLib);

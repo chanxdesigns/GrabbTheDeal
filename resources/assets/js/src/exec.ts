@@ -179,7 +179,7 @@
             var bgColor = "#144e76";
         }
         $('.top-panel').css({
-            background: imgUrl ? "url("+imgUrl+") no-repeat" : bgColor,
+            background: imgUrl ? "url(" + window.location.protocol + "//cdn.grabbthedeal.in/" + imgUrl + ") no-repeat" : bgColor,
             backgroundSize: 'cover'
         });
     // See more offer details
@@ -203,9 +203,11 @@
     // Set the Store popup body size
     GTDLib.popupBoxSizing('.popup-store-nav-body');
 
+    // Invoke the Store Popup
+    $('.stores-list').click(GTDLib.showStorePopup);
+
     // Filter stores for every page
     $('.stores-filter').change(GTDLib.updateStoresAndCategories);
-    $('.stores').click(GTDLib.showStorePopup);
 
 
     /**********************************************************************
