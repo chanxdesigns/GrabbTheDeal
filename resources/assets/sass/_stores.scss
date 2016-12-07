@@ -1,0 +1,253 @@
+.popup-store-wrapper {
+  display: none;
+  position: relative;
+  .popup-store-backdrop {
+    position: fixed;
+    top: 0;
+    background: transparentize($brand-primary,0.1);
+    height: 100%;
+    width: 100%;
+    z-index: 999999;
+    .popup-store-nav-body {
+      position: fixed;
+      width: 600px;
+      height: 400px;
+      background: white;
+      .close {
+        padding: 10px 20px;
+        font-size: 20px;
+        color: darken($brand-gray, 10%);
+        cursor: pointer;
+        &:hover {
+          color: darken($brand-gray, 50%);
+        }
+      }
+      .popup-store-logo-wrapper {
+        margin-top: 40px;
+        .popup-store-logo {
+          display: block;
+          height: 60px;
+          margin: 0 auto;
+        }
+      }
+      .popup-store-cashback-rate-wrapper {
+        margin-top: 50px;
+        padding: 20px 0;
+        background: $brand-green;
+        .popup-store-cashback-rate {
+          color: white;
+          text-align: center;
+          margin: 0;
+          font-size: 28px;
+        }
+      }
+      .popup-store-offers {
+        color: lighten($brand-black,30%);
+        text-align: center;
+        font-size: 18px;//
+      }
+      .popup-store-buttons {
+        width: 400px;
+        margin: 40px auto 0;
+        .button {
+          display: inline-block;
+          width: 150px;
+          margin-right: 10px;
+          font-size: 16px;
+          &.no-margin {
+            margin-right: 0;
+          }
+          &.single {
+            width: 360px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.store-header {
+  background: url('//cdn.grabbthedeal.in/assets/img/store-header2.jpg') fixed bottom no-repeat darken($brand-gray,10%);
+  background-size: cover;
+  padding: 80px 0;
+  h1 {
+    color: white;
+    text-align: center;
+  }
+}
+
+.invite-friends {
+  color: white;
+  h2 {
+    text-align: center;
+    line-height: 30px;
+  }
+  .button {
+    width: 150px;
+  }
+}
+
+.store-wrapper {
+  padding: 25px 0 0;
+  width: 972px;
+  .no-margin {
+    margin-right: 0!important;
+  }
+  .store-top-offers {
+    //margin-top: 10px;
+    .title {
+      font-weight: 400;
+      margin: 0;
+      font-size: 15px;
+      letter-spacing: 0;
+    }
+    p {
+      margin: 10px 0;
+      color: lighten($brand-black,35%);
+      font-size: 18px;
+    }
+    .store-top-offers-images-wrapper {
+      margin: 30px 0 0;
+    }
+    .store-top-offers-container {
+      display: inline-block;
+      margin-right: 8px;
+      width: 443.5px;
+      &:hover .store-top-offers-images {
+        -webkit-transform: translateY(-5px);
+        -moz-transform: translateY(-5px);
+        -o-transform: translateY(-5px);
+        transform: translateY(-5px);
+      }
+      &:hover .store-top-offers-images-details {
+        -webkit-transform: translateY(-5px);
+        -moz-transform: translateY(-5px);
+        -o-transform: translateY(-5px);
+        transform: translateY(-5px);
+      }
+      &:hover .store-top-offers-images-details h3 {
+        color: lighten($brand-black,10%);
+      }
+      &:hover .store-top-offers-images-details p {
+        color: lighten($brand-black,10%);
+      }
+      .store-top-offers-images {
+        overflow: hidden;
+        margin-right: 10px;
+        height: 200px;
+        @include mkTransition(all 0.3s);
+        img {
+          display: block;
+          margin-right: auto;
+          margin-left: auto;
+          width: auto;
+          height: 200px;
+          text-align: center;
+        }
+      }
+      .store-top-offers-images-details {
+        background: #ffffff;
+        margin-right: 10px;
+        padding: 15px 10px;
+        border-left: 1px solid darken($brand-gray,5%);
+        border-right: 1px solid darken($brand-gray,5%);
+        border-bottom: 1px solid darken($brand-gray,5%);
+        @include mkTransition(all 0.3s);
+        h3 {
+          margin: 0 0 5px 0;
+          font-size: 20px;
+          color: lighten($brand-black,30%);
+          text-align: center;
+        }
+        p {
+          font-weight: 400;
+          margin: 0;
+          font-size: 15px;
+          text-align: center;
+          color: lighten($brand-black,40%);
+        }
+      }
+    }
+  }
+  .stores-wrapper {
+    margin-top: 18px;
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    .stores-list {
+      display: inline-block;
+      margin-right: 16px;
+      margin-bottom: 16px;
+    }
+  }
+  .stores-card {
+    position: relative;
+    display: block;
+    background: white;
+    width: 223px;
+    height: 124px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    overflow: hidden;
+    text-decoration: none;
+    .store-card-header {
+      height: 40px;
+      .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        height: 30px;
+        margin-top: 10px;
+      }
+    }
+    .store-card-details {
+      text-align: center;
+      p {
+        margin: 5px 0 10px;
+        font-size: 15px;
+        font-weight: 700;
+        color: lighten($brand-primary,20%);
+      }
+    }
+    .store-card-footer {
+      display: block;
+      border-top: 1px solid $brand-gray;
+      background: lighten($brand-gray,3%);
+      border-bottom-left-radius: 2px;
+      border-bottom-right-radius: 2px;
+      height: 40px;
+      .store-footer-text {
+        font-size: 14px;
+        color: $brand-accent;
+        margin: 12px 0 0;
+        text-align: center;
+      }
+    }
+  }
+}
+.bottom-about-us-excerpt {
+  padding: 10px 0;
+  margin-bottom: 150px;
+  h3 {
+    color: lighten($brand-black,30%);
+  }
+  p {
+    color: lighten($brand-black,40%);
+    line-height: 22px;
+    font-size: 14px;
+  }
+}
+
+.store-redirect-wrapper {
+  @extend .offer-redirect-wrapper;
+  .redirect-header {
+    .header-img {
+      width: 180px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}

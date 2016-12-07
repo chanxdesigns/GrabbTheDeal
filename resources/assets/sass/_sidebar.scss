@@ -1,0 +1,151 @@
+/**
+ * Sidebar Styles
+ */
+
+.sidebar-wrapper {
+  padding: 25px 0;
+  margin: 0 20px 0 0;
+  width: 218px;
+  img {
+    height: 200px;
+    width: 100%;
+  }
+}
+.card-header {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: lighten($brand-black,20%);
+}
+.card-wrapper {
+  background: transparent;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  &.sunset {
+    background: $brand-sunset;
+    border: none;
+  }
+  &.purple {
+    background: $brand-purple;
+    border: none;
+  }
+  .sidebar-logo {
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 40px;
+      width: 220px;
+      height: auto;
+    }
+    p {
+      margin: 0 0 5px 0;
+      font-weight: 700;
+      line-height: 25px;
+      text-align: center;
+      color: $brand-madison;
+    }
+  }
+  .button {
+    padding: 15px 0;
+    text-transform: uppercase;
+  }
+  .shop {
+    margin-top: 20px;
+  }
+}
+.sidebar-border {
+  height: 1px;
+  border-bottom: 1px solid $brand-gray;
+}
+.store-promo {
+  h3 {
+    //text-align: center;
+    font-size: 30px;
+    margin: 10px 0;
+    letter-spacing: 2px;
+    color: $brand-sunset;
+  }
+}
+.sidebar-gen {
+  color: lighten($brand-black,30%);
+  h3 {
+    margin: 0;
+  }
+  p {
+    margin: 0;
+  }
+}
+.filter-input-icon-wrapper {
+  position: relative;
+  .filter-input {
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid darken($brand-gray,10%);
+    padding: 10px 10px;
+    font-size: 14px;
+    font-family: $primary-font;
+    color: lighten($brand-primary,20%);//
+    width: 218px;
+    margin-bottom: 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    @include mkBoxSizing(border-box);
+  }
+  &:before {
+    position: absolute;
+    font-family: 'Ionicons', sans-serif;
+    content: '\f4a5';
+    left: 196px;
+    font-size: 16px;
+    line-height: 36px;
+  }
+}
+.sidebar-categories {
+  .cat-filter-wrapper {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    max-height: 250px;
+    .cat-filter {
+      margin-bottom: 10px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+      label {
+        color: lighten($brand-black,40%);
+        font-size: 14px;
+      }
+      &:hover {
+        color: $brand-blue;
+      }
+    }
+    .stores-filter {
+      @extend .cat-filter;
+    }
+  }
+}
+.sidebar-store-about {
+  p {
+    //margin-top: 18px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+.sidebar-share {
+  ul.share-buttons{
+    list-style: none;
+    padding: 0;
+  }
+
+  ul.share-buttons li{
+    display: inline;
+    img{
+      width: auto;
+      height: auto;
+    }
+  }
+}

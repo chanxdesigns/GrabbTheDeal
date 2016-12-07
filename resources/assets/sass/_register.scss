@@ -1,0 +1,81 @@
+.register-wrapper {
+  @extend .login-wrapper;
+}
+.register {
+  @extend .login;
+  width: 800px!important;
+  height: 460px!important;
+}
+
+.register-form {
+  margin: 20px 20px 0;
+  .form-group {
+    display: inline-block;
+    width: 47%;
+  }
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: lighten($brand-black,30%);
+    font-size: 15px;
+  }
+  input {
+    display: inline-block;
+    width: 100%;
+    height: 45px;
+    padding: 0 5px;
+    outline: none;
+    font-size: 16px;
+    font-family: $primary-font;
+    border: 1px solid darken($brand-gray,10%);
+    border-radius: 2px;
+    word-spacing: normal;
+    @include mkBoxSizing(border-box);
+    &:focus {
+      border: 2px solid lighten($brand-madison,50%);
+    }
+    &[type="submit"] {
+      background: $brand-blue;
+      font-weight: 700;
+      color: white;
+      border: none;
+      height: 45px;
+      margin-top: 18px;
+      &:hover {
+        background: lighten($brand-blue,10%);
+      }
+    }
+    &[type="checkbox"] {
+      height: 12px;
+      width: auto;
+      margin: 0;
+    }
+    &::-moz-placeholder {
+      font-size: 16px;
+    }
+    &::-webkit-input-placeholder {
+      font-size: 16px;
+    }
+  }
+  .help-block {
+    position: relative;
+    top: 0;
+    font-size: 13px;
+    margin: 10px 0 0;//
+  }
+}
+
+.reg-offer {
+  padding: 0 20px;
+  margin-top: 40px;
+  text-align: center;
+  color: lighten($brand-black,30%);
+  .reg-offer-gifts {
+    width: 200px;
+    height: auto;
+  }
+  span {
+    color: $brand-sunset;
+  }
+}

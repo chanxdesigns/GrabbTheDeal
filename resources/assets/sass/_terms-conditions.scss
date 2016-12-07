@@ -1,0 +1,27 @@
+.terms-condition-wrapper {
+  padding: 50px 20px;
+  background: white;
+  border-radius: 4px;
+  .terms-condition-body {
+    .title {
+      margin-top: 0;
+    }
+    .terms-text {
+      color: lighten($brand-black,30%);
+      line-height: 24px;
+      margin: 0;
+      span {
+        font-weight: 700;
+      }
+      a {
+        color: $brand-blue;
+        text-decoration: none;
+      }
+    }
+    .terms-title {
+      color: $brand-madison;
+      font-size: 22px;
+      font-weight: 400;
+    }
+  }
+}

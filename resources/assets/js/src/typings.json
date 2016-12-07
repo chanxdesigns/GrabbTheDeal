@@ -1,0 +1,15 @@
+{
+  "dependencies": {},
+  "globalDevDependencies": {
+    "jquery": "registry:dt/jquery#1.10.0+20160704162008"
+  },
+  "devDependencies": {
+    "requirejs": "registry:npm/requirejs#2.2.0+20160319062357"
+  },
+  "globalDependencies": {
+    "bounce": "registry:dt/bounce#0.8.2+20160316155526",
+    "jquery.validation": "registry:dt/jquery.validation#1.13.1+20160626224847",
+    "js-cookie": "registry:dt/js-cookie#2.0.0+20160317120654",
+    "modernizr": "registry:dt/modernizr#3.2.0+20160215162030"
+  }
+}

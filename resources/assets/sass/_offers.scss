@@ -1,0 +1,385 @@
+/**
+ * Category Wrapper
+ */
+.top-panel {
+  background: darken($brand-secondary,35%);
+  background-size: cover;
+  padding: 20px 0;
+  .left-tab {
+    position: relative;
+    width: 198px;
+    height: 180px;
+    margin-right: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 2px;
+    overflow: hidden;
+    //background: transparentize(white,0.1);
+    .background-image {
+      position: absolute;
+      height: inherit;
+      width: inherit;
+    }
+    .main-image-wrapper {
+      height: 80px;
+      .main-image {
+        display: block;
+        margin: 20px auto 0;
+        width: 150px;
+        height: auto;
+      }
+    }
+    .header-text {
+      font-size: 30px;
+      font-weight: 500;
+      color: lighten($brand-black,30%);
+      margin: 0 0 8px 0;
+    }
+    .subtitle-text {
+      margin: 8px 0 5px;
+      color: $brand-primary;
+      font-weight: 400;
+      font-size: 14px;
+      text-align: center;
+    }
+    .button {
+      border-radius: 30px;
+    }
+  }
+  .center-tab {
+    width: 772px;
+    margin-right: 20px;
+    .header-text {
+      display: block;
+      font-size: 25px;
+      font-weight: 500;
+      color: whitesmoke;
+      margin: 5px 0 20px;
+    }
+    .body-text {
+      margin: 0;
+      line-height: 24px;
+      color: $brand-gray;
+      font-size: 14px;
+    }
+  }
+  .right-tab {
+    width: 180px;
+    .breadcrumb-panel {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      .breadcrumb-link {
+        display: inline-block;
+        font-size: 14px;
+        margin-right: -4px;
+        color: whitesmoke;
+        font-weight: 400;
+        &:after {
+          font-family: 'Ionicons', sans-serif;
+          font-size: 10px;
+          color: whitesmoke;
+          content: "\f125";
+          margin-left: 4px;
+          margin-right: 4px;
+        }
+        &:last-of-type {
+          content: "";
+          margin: 0;
+          &:after {
+            content: "";
+            margin: 0;
+          }
+        }
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+// Offer Lists Style
+.offers {
+  padding: 25px 0 150px ;
+  width: 972px;
+}
+.selected-offer {
+  width: 972px;
+  height: 100px;
+  margin-bottom: 20px;//
+  overflow: hidden;
+  img {
+    width: 972px;
+    height: auto;
+  }
+}
+.showing-offers {
+  width: 300px;
+  .showing-offers-count-page {
+    margin-top: 0;
+    color: lighten($brand-black,50%);
+    span {
+      vertical-align: middle;
+    }
+  }
+}
+.filter {
+  position: relative;
+  margin-top: -6px;
+  border-radius: 4px;
+  vertical-align: middle;
+  width: 300px;
+  z-index: 99;
+  span {
+    font-weight: 700;
+    color: lighten($brand-black,40%);
+    font-size: 14px;
+    vertical-align: middle;
+  }
+  .filter-select {
+    position: absolute;
+    display: inline-block;
+    height: 30px;
+    right: 0;
+    margin-left: 5px;
+    background: white;
+    border: 1px solid darken($brand-gray,5%);
+    width: 150px;
+    &:after {
+      position: relative;
+      left: -5px;
+      top: -14px;
+      float: right;
+      font-size: 14px;
+      color: lighten($brand-black,30%);
+      content: "\f123";
+      font-family: 'Ionicons', sans-serif;//
+    }
+    select {
+      background: none;
+      border: none;
+      outline: none;
+      vertical-align: middle;
+      margin-top: 6px;
+      width: 150px;
+      padding-left: 5px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      @include mkBoxSizing(border-box);
+      option {
+        color: lighten($brand-black,30%);
+      }
+    }
+    .icon-dd {
+      position: relative;
+      top: 0;
+    }
+  }
+}
+.offers-list-wrapper {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  .offer-list-item {
+    position: relative;
+    background: white;
+    //border-bottom: 1px solid darken($brand-gray,6%);
+    margin-bottom: 25px;
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(99, 99, 99, 0.35);
+    -moz-box-shadow:    0px 3px 10px 0px rgba(99, 99, 99, 0.35);
+    box-shadow:         0px 3px 10px 0px rgba(99, 99, 99, 0.35);
+    &:last-of-type {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+    .offer-amount {
+      display: inline-block;
+      width: 120px;
+      margin-right: 30px;
+      padding: 30px 0 30px 30px;
+      }
+      .cashback-amount-text {
+        margin: 15px 0;
+        text-align: center;
+        font-size: 25px;
+        color: $brand-accent;
+        font-weight: 500;
+        &.cashback-amount-text-small {
+          font-size: 25px;
+        }
+      }
+      .store-logo {
+        margin-top: 10px;
+        width: 120px;
+      }
+    }
+    .offer-desc {
+      display: inline-block;
+      padding: 30px 0 0;
+      width: 570px;
+      margin-right: 20px;
+      vertical-align: top;
+      .offer-title {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 32px;
+        color: $brand-primary;
+        text-decoration: none;
+      }
+      .offer-desc-text {
+        font-size: 14px;
+        line-height: 22px;
+        color: lighten($brand-primary,10%);
+        margin-bottom: 25px;//
+        &.more {
+          display: none;
+        }
+      }
+      .see-more-text {
+        font-weight: 700;
+        color: $brand-secondary;
+        text-decoration: none;
+      }
+    }
+    .offer-action {
+      display: inline-block;
+      padding: 30px 0 0;
+      width: 155px;
+      vertical-align: top;
+      .gtd {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        text-align: left;
+        width: 400px;
+        padding: 15px;
+        color: white;
+        font-size: 15px;
+        border-radius: 0;
+        border-bottom-right-radius: 2px;
+        background: $brand-secondary;
+        &:hover {
+          background: darken($brand-secondary, 35%);
+        }
+      }
+      .featured {
+        background: transparent;
+        width: 100px;
+        border-radius: 30px;
+        padding: 5px 10px;
+        font-size: 12px;
+        font-weight: 300;
+        color: $brand-primary;
+      }
+    }
+    // Footer
+    .offer-footer {
+      padding: 15px 0 15px 25px;
+      border-top: 1px solid $brand-gray;
+      background: lighten($brand-gray,4%);
+      .content-block {
+        display: inline-block;
+        width: 150px;
+      }
+      .footer-small-text {
+        position: relative;
+        margin: 0;
+        font-size: 12px;
+        color: lighten($brand-black,40%);
+        i {
+          vertical-align: middle;
+          margin-right: 2px;
+        }
+      }
+      a.footer-small-text {
+        cursor: pointer;
+      }
+    }
+  }
+.no-offers {
+  .no-offers-text {
+    color: lighten($brand-black, 30%);
+    text-align: center;
+    font-weight: 300;
+    font-size: 40px;
+    .imp {
+      color: $brand-pink;
+    }
+  }
+}
+
+.store-footer-details {
+  margin-top: 30px;
+  h3 {
+    color: lighten($brand-black,30%);
+    margin: 0;
+  }
+  p {
+    margin-top: 10px;
+    color: lighten($brand-black,50%);
+    line-height: 22px;
+    font-size: 14px;
+  }
+}
+
+// Offer redirect page
+.offer-redirect-wrapper {
+  margin: 80px auto;
+  border: 1px solid darken($brand-gray,5%);
+  width: 700px;
+  border-radius: 4px;
+  .redirect-header {
+    height: 60px;
+    padding: 20px;
+    .header-img {
+      width: 180px;
+      margin: 5px 0;
+    }
+    .header-text {
+      color: lighten($brand-black,20%);
+      font-size: 18px;
+      margin: 5px 0;
+      width: 460px;
+    }
+  }
+  .redirect-body {
+    padding: 20px;
+    .span-text {
+      color: $brand-pink;
+    }
+    .redirect-body-title {
+      color: $brand-pink;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-align: center;
+    }
+    .redirect-text {
+      color: lighten($brand-black,30%);
+      text-align: center;//
+      font-size: 26px;
+    }
+    .loading-spinner {
+      display: block;
+      margin: -25px auto;
+    }
+    .redirect-sub-text {
+      font-size: 16px;
+      font-weight: 700;
+      color: lighten($brand-black,30%);
+      text-align: center;
+      //margin:
+    }
+    .redirect-small-text {
+      color: darken($brand-gray,25%);
+      font-size: 14px;
+      text-align: center;
+      margin-top: 12px;
+      .warning {
+        color: $brand-sunset;
+      }
+    }
+  }
+}

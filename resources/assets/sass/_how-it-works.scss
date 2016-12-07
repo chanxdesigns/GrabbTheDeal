@@ -1,0 +1,88 @@
+.how-it-works-header-wrapper {
+  background: url('//cdn.grabbthedeal.in/assets/img/how-it-works-main-header.jpg') top fixed no-repeat;
+  background-size: contain;
+  padding: 150px 0;
+  .header-text {
+    color: white;
+    text-align: center;
+  }
+}
+
+.how-it-works-details {
+  //padding: 50px 0;
+  .title {
+    text-align: center;
+  }
+  .how-it-works-excerpt {
+    display: block;
+    margin: 0 auto;
+    padding: 50px 0;
+    width: 700px;
+    h3 {
+      color: lighten($brand-madison,30%);
+      font-weight: 300;
+      font-size: 25px;
+      line-height: 35px;
+    }
+  }
+}
+
+.how-it-works-explained {
+  padding: 50px 0 0;
+  .title {
+    text-align: center;
+    margin: 0;
+  }
+  .step {
+    padding: 50px 0;
+    &.even {
+      background: white;
+    }
+    &.odd {
+      background: lighten($brand-blue,50%);
+    }
+    .step-text {
+      width: 684px;
+      margin-right: 20px;
+      display: inline-block;
+      vertical-align: middle;
+      .step-title {
+        color: lighten($brand-black,30%);
+      }
+      .step-body {
+        color: lighten($brand-black,30%);
+        text-align: left;
+        line-height: 25px;
+      }
+    }
+    .step-img {
+      width: 500px;
+      display: inline-block;
+      vertical-align: middle;
+      /**
+      .image-wrapper {
+        display: block;
+        margin: 0 auto;
+        overflow: hidden;
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        **/
+        img {
+          display: block;
+          margin: 0 auto;
+          height: 100px;
+          width: auto;
+        }
+    }
+  }
+}
+
+.start-shopping-wrapper {
+  padding: 100px 0;
+  background: $brand-madison;
+  .button {
+    width: 200px;
+    font-size: 18px;
+  }
+}

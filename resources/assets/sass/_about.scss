@@ -1,0 +1,80 @@
+.about-header-wrapper {
+  background: $brand-madison url('//cdn.grabbthedeal.in/assets/img/about-header.jpg') center no-repeat;
+  background-size: cover;
+  padding: 150px 0;
+  .about-header-title {
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    width: 800px;
+  }
+}
+
+.about-us-title {
+  color: $brand-madison;
+  font-size: 30px;
+  text-align: center;
+}
+.about-us-text {
+  margin: 20px auto;
+  width: 700px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 15px;
+  color: lighten($brand-black,30%);
+  line-height: 25px;
+}
+
+.about-us-excerpt {
+  padding: 100px 0;
+  background: $brand-gray;
+  .about-us-title {
+    margin-bottom: 0;
+  }
+  .about-us-text {
+    font-size: 20px;
+    color: lighten($brand-madison,40%);
+    text-align: left;
+  }
+}
+
+.about-us-why-us {
+  padding: 50px 0;
+  background: $brand-lime;
+  .why-us-wrapper {
+    .image {
+
+    }
+    .text {
+      text-align: center;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: lighten($brand-black,30%);
+    }
+  }
+  .why-us-home {
+    background: transparent;//
+  }
+}
+
+.about-us-partners {
+  padding: 100px 0;
+  .about-us-title {
+    margin-top: 0;
+  }
+  .partners-wrapper {
+    margin-top: 40px;
+  }
+  .image-wrapper {
+    display: inline-block;
+    width: 140px;
+    margin-right: -4px;//
+    .image-content {
+      display: block;
+      margin: 0 auto;
+      width: 100px;
+      height: auto;
+    }
+  }
+}

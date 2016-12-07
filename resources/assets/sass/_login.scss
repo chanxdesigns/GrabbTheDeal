@@ -1,0 +1,207 @@
+.login-wrapper {
+  position: fixed;
+  background: transparentize($brand-madison,0.3);
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  border-radius: 2px;
+  display: none;
+  .login {
+    display: block;
+    width: 550px;
+    height: 450px;
+    margin-right: auto;
+    margin-left:auto;
+    background: white;
+    position: fixed;
+    z-index: 99999;
+    .login-form {
+      margin: 20px;
+      label {
+        display: block;
+        font-weight: 700;
+        color: lighten($brand-black,30%);
+        font-size: 15px;
+        margin-bottom: 10px;
+        &.remember-checkbox {
+          display: inline-block;
+          font-size: 15px;
+        }
+      }
+      input {
+        height: 45px;
+        padding: 5px;
+        font-size: 16px;
+        font-family: $primary-font;
+        text-align: center;
+        border-radius: 2px;
+        border: 1px solid darken($brand-gray,10%);
+        width: 100%;
+        outline: none;
+        word-spacing: normal;
+        @include mkBoxSizing(border-box);
+        &:focus {
+          border: 2px solid lighten($brand-madison,50%);
+        }
+        &[type="submit"] {
+          background: $brand-blue;
+          font-weight: 700;
+          color: white;
+          border: none;
+          height: 50px;
+          &:hover {
+            background: lighten($brand-blue,10%);
+          }
+        }
+        &[type="checkbox"] {
+          height: 12px;
+          width: auto;
+          margin: 0;
+        }
+        &::-moz-placeholder {
+          font-size: 16px;
+        }
+        &::-webkit-input-placeholder {
+          font-size: 16px;
+        }
+      }
+      .help-block {
+        font-size: 12px;
+      }
+      .password-forgot {
+        display: block;
+        margin: 0 0 10px 0;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 400;
+        color: $brand-sunset;
+      }
+    }
+    .or {
+      text-align: center;
+      font-weight: 700;
+      color: darken($brand-gray,30%);
+      margin-top: 0;
+    }
+    .social-login {
+      display: inline-block;
+      width: 49%;
+      text-align: center;
+      color: white;
+      font-weight: 700;
+      a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+      }
+      button {
+        padding: 20px 10px;
+        width: 100%;
+        border-radius: 2px;
+        border: none;
+        outline: none;
+        color: white;
+        font-size: 16px;
+        font-family: $primary-font;
+        font-weight: 700;
+        @include mkBoxSizing(border-box);
+      }
+      .facebook-login {
+        background: $facebook;
+        &:hover {
+          background: lighten($facebook,10%);
+        }
+      }
+      .google-login {
+        background: $google-plus;
+        @include mkBoxSizing(border-box);
+        &:hover {
+          background: lighten($google-plus,10%);
+        }
+      }
+    }
+    .not-member {
+      text-align: center;
+      color: darken($brand-gray,50%);
+      p {
+        font-size: 15px;
+        margin: 0;
+      }
+      .popup-register {
+        text-decoration: none;
+        color: $brand-blue;
+      }
+    }
+  }
+}
+
+//////
+/// Password Reset
+/////
+.password-reset-form-wrapper {
+  border: 1px solid darken($brand-gray,10%);
+  border-radius: 2px;
+  width: 700px;
+  margin: 100px auto;
+  padding: 50px 0;
+  background: white;
+  .password-reset-header {
+    text-align: center;
+    font-weight: 300;
+    font-size: 40px;
+    margin: 0 0 40px 0;
+    color: lighten($brand-black,30%);
+  }
+  .password-reset-form {
+    display: block;
+    margin: 0 auto;
+    label {
+      display: block;
+      margin: 0 auto 10px;
+      width: 500px;
+      font-weight: 700;
+      color: lighten($brand-black, 30%);
+    }
+    input {
+      display: block;
+      margin: 0 auto;
+      height: 40px;
+      width: 500px;
+      border: 1px solid darken($brand-gray,10%);
+      border-radius: 2px;
+      background: lighten($brand-gray,5%);
+      padding: 5px 10px;
+      font-size: 16px;
+      font-family: $primary-font;
+      color: lighten($brand-black, 20%);
+      @include mkBoxSizing(border-box);
+      @include mkTransition(all 0.3s ease);
+      &:focus {
+        border: 1px solid $brand-blue;
+        outline: none;
+        background: white;
+      }
+      &[type='submit'] {
+        margin-top: 20px;
+        width: 200px;
+        background: $brand-blue;
+        text-align: center;
+        color: white;
+        border: none;
+        &:hover {
+          background: darken($brand-blue,10%);
+        }
+      }
+      &.error {
+        border: 1px solid $brand-sunset;
+      }
+    }
+  }
+  .password-reset-message {
+    display: none;
+    text-align: center;
+    color: lighten($brand-black,30%);
+    font-weight: 700;
+    margin: 0;
+  }
+}

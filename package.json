@@ -1,0 +1,41 @@
+{
+  "private": true,
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-modernizr": "^1.0.2"
+  },
+  "dependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-modernizr": "^1.0.2",
+    "grunt-ts": "^5.5.1"
+  },
+  "name": "grabbthedeal",
+  "description": "",
+  "version": "1.0.0",
+  "main": "",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chanxdesigns/GrabbTheDeal.git"
+  },
+  "author": "Chanx Singha <chanx.designs@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chanxdesigns/GrabbTheDeal/issues"
+  },
+  "homepage": "https://github.com/chanxdesigns/GrabbTheDeal#readme"
+}

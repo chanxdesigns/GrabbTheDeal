@@ -1,0 +1,26 @@
+{
+  "name": "grabbthedeal",
+  "homepage": "https://github.com/chanxdesigns/GrabbTheDeal",
+  "authors": [
+    "Chanx Singha <chanx.designs@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "js-cookie": "^2.1.2",
+    "jquery": "^3.1.1",
+    "perfect-scrollbar": "^0.6.14",
+    "bxslider-4": "^4.2.5",
+    "owl.carousel": "^2.2.0"
+  }
+}

@@ -1,0 +1,177 @@
+footer {
+  .main-footer {
+    display: block;
+    background: darken(white,3%);//
+    padding: 50px 0 100px;
+    border-top: 1px solid darken(white,15%);
+    .footer-content {
+      .footer-content-text {
+        color: lighten($brand-black, 20%);
+        line-height: 20px;
+        font-size: 12px;
+        margin-right: 40px;
+      }
+      .footer-logo {
+        width: 150px;
+        margin-bottom: 10px;
+        margin-top: 16px;
+      }
+    }
+    .footer-extra-nav-links {
+      border-top: 1px solid darken(white,15%);
+      padding-top: 50px;
+      .footer-categories {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        .footer-category-link {
+          display: inline-block;
+          &::after {
+            content: ' |';
+            vertical-align: middle;
+          }
+          &:last-of-type {
+            &::after {
+              content: '';
+            }
+          }
+        }
+      }
+    }
+    .footer-nav {
+      .footer-title {
+        color: $brand-primary;
+        text-transform: uppercase;
+        font-size: 14px;
+      }
+      ul {
+        padding: 0;
+        list-style-type: none;
+        li {
+          margin-bottom: 10px;
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+          a {
+            color: lighten($brand-black,30%);
+            font-size: 12px;
+            font-weight: 400;
+            text-decoration: none;
+            text-transform: uppercase;
+            &:hover {
+              color: lighten($brand-black,20%);
+            }
+          }
+        }
+        &.social {
+          li {
+            display: inline-block;
+            margin-right: 25px;
+            &:last-of-type {
+              margin-right: 0;
+            }
+            a {
+              font-size: 30px;
+            }
+            .ion-social-twitter {
+              &:hover {
+                color: #1da1f2;
+              }
+            }
+            .ion-social-facebook {
+              &:hover {
+                color: #3B5998;
+              }
+            }
+            .ion-social-instagram {
+              &:hover {
+                color: #5851db;
+              }
+            }
+            .ion-social-googleplus {
+              &:hover {
+                color: #dd4b39;
+              }
+            }
+          }
+        }
+      }
+      #footer-subscribe {
+        .subscribe-subtext {
+          font-size: 14px;
+          font-weight: 700;
+          color: lighten($brand-black,30%);
+        }
+        input {
+          display: block;
+          outline: none;
+          border: 1px solid darken(white,15%);
+          height: 35px;
+          color: lighten($brand-black, 20%);
+          background: darken($brand-gray,5%);
+          border-radius: 2px;
+          padding: 5px;
+          margin-bottom: 10px;
+          width: 200px;
+          font-size: 12px;
+          font-family: $primary-font;
+          @include mkBoxSizing(border-box);
+          &::-moz-placeholder {
+            font-family: $primary-font;
+            color: lighten($brand-black, 20%);
+          }
+          &::-webkit-input-placeholder {
+            font-family: $primary-font;
+            color: lighten($brand-black, 20%);
+          }
+          &:-ms-input-placeholder {
+            font-family: $primary-font;
+            color: lighten($brand-black, 20%);
+          }
+        }
+        input[type=submit] {
+          display: block;
+          background: $brand-blue;
+          color: white;
+          height: 35px;
+          border-radius: 2px;
+          border: 1px solid $brand-blue;
+          width: 200px;
+          font-size: 14px;
+          font-weight: 700;
+          @include mkBoxSizing(border-box);
+        }
+      }
+    }
+  }
+
+  .footer-attribution {
+    background: darken(white,2%);
+    padding: 20px 0;
+    border-top: 1px solid darken(white,15px);
+    .attribution-text {
+      padding: 0;
+      margin: 0;
+      p {
+        text-align: center;
+        font-size: 12px;
+        color: lighten($brand-black, 20%);
+        margin: 0;
+      }
+      .attribution-link {
+        display:block;
+        text-align: center;
+        a {
+          display: inline-block;
+          color: $brand-blue;
+          text-decoration: none;
+          font-weight: 700;
+          font-size: 12px;
+        }
+        .pipe {
+          color: lighten($brand-black, 70%);
+        }
+      }
+    }
+  }
+}

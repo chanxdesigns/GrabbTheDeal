@@ -1,0 +1,399 @@
+// Animation
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+// Slide In Down Animation
+@-webkit-keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
+
+/* Sink */
+.hvr-sink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sink:hover, .hvr-sink:focus, .hvr-sink:active {
+  -webkit-transform: translateY(8px);
+  transform: translateY(8px);
+}
+
+/* Bounce To Bottom */
+.hvr-bounce-to-bottom {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hvr-bounce-to-bottom:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: darken($brand-accent,5%);
+  border-radius: 2px;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-bounce-to-bottom:hover, .hvr-bounce-to-bottom:focus, .hvr-bounce-to-bottom:active {
+  color: white;
+}
+.hvr-bounce-to-bottom:hover:before, .hvr-bounce-to-bottom:focus:before, .hvr-bounce-to-bottom:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+
+/////////////////////////////////////////////
+// Utilities
+/////////////////////////////////////////////
+
+// Floats
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+
+// Fixed Width Icons
+.fw {
+  display: inline-block;
+  color: inherit;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+}
+
+.modal-header {
+  background: lighten($brand-madison,75%);//
+  margin-bottom: 25px;
+  padding: 20px;
+  border-bottom: 1px solid lighten($brand-madison,70%);
+  img.close {
+    height: 20px;
+    width: auto;
+    vertical-align: middle;
+    //margin-top: -5px;
+    cursor: pointer;
+  }
+  h3 {
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: $brand-madison;
+  }
+  p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: lighten($brand-madison,50%);
+  }
+}
+
+.notification-topbar {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  color: lighten($brand-black,30%);
+  -webkit-box-shadow: 0px 5px 30px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow:    0px 5px 30px 0px rgba(50, 50, 50, 0.5);
+  box-shadow:         0px 5px 30px 0px rgba(50, 50, 50, 0.5);
+  z-index: 99999999;
+  h3, p {
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+  }
+  &.danger {
+    background: $brand-pink;
+    color: white!important;
+  }
+  &.success {
+    background: $brand-green;
+    color: white!important;
+  }
+}
+
+.small {
+  font-family: $primary-font;
+  font-size: 13px;
+  color: darken($brand-gray, 30%);
+}
+
+.title {
+  color: $brand-primary;
+  font-size: 22px;
+  font-weight: 700;
+}
+.sub-title {
+  color: lighten($brand-black,60%);
+  text-align: left;
+  line-height: 24px;
+}
+
+.alert {
+  border-radius: 2px;
+  background: lighten($brand-secondary,30%);
+  border: 1px solid $brand-secondary;
+  color: darken($brand-secondary, 10%);
+  padding: 1px 10px;//
+  &.danger {
+    background: lighten($brand-sunset, 30%);
+    border: 1px solid $brand-sunset;
+    color: darken($brand-sunset,10%);
+  }
+  &.warning {
+    background: lighten($brand-orange, 30%);
+    border: 1px solid $brand-orange;
+    color: darken($brand-orange, 10%);
+  }
+  &.success {
+    background: lighten($brand-green, 50%);
+    border: 1px solid $brand-green;
+    color: darken($brand-green, 10%);
+  }
+}
+
+.badge {
+  padding: 5px;
+  border-radius: 4px;
+  &.danger {
+    color: white!important;
+    background: $brand-sunset;
+  }
+  &.success {
+    color: white!important;
+    background: $brand-green;
+  }
+  &.warning {
+    color: white!important;
+    background: $brand-orange;
+  }
+}
+
+.form-group {
+  display: block;
+  margin-bottom: 25px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  &.inline {
+    display: inline-block;
+  }
+}
+.remember-group {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.background {
+  /** Colors BG **/
+  &.gray {
+    background: $brand-gray;
+  }
+}
+
+.button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  @include mkTransition(all 0.3s);
+  /** Size **/
+  &.medium {
+    padding: 15px 20px;
+    //width: 240px;
+  }
+  /** Colors **/
+  &.primary {
+    background: $brand-primary;
+    color: white!important;
+    &:hover {
+      background: darken($brand-primary,15%);
+    }
+    &.outline {
+      background: transparent;
+      border: 1px solid $brand-primary;
+      border-radius: 30px;
+      color: $brand-primary!important;//
+    }
+  }
+  &.blue {
+    background: $brand-secondary;
+    color: white!important;
+    &:hover {
+      background: darken($brand-secondary,15%);
+    }
+  }
+  &.green {
+    &.outline {
+      border: 1px solid $brand-green;
+    }
+  }
+  &.sunset {
+    background: $brand-accent;
+    color: white!important;
+    &:hover {
+      background: darken($brand-accent,15%);
+    }
+  }
+}
+
+.tooltip-wrapper {
+  display: none;
+  position: absolute;
+  top: -30px;
+  left: 100px;
+  width: 250px;
+  padding: 10px;
+  border-radius: 2px;
+  border: 1px solid $brand-accent;
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5);
+  max-height: 500px;
+  z-index: 99;
+  background: white;
+  &:after {
+    position: absolute;
+    top: 26px;
+    content: '';
+    left: -20px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid $brand-chambray;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+  .tooltip-lists {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    h3 {
+      color: lighten($brand-black,60%);
+      margin: 0;
+    }
+    .tooltip-body {
+      p {
+        color: lighten($brand-black,60%);
+        margin: 0;
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+.success {
+  color: $brand-green!important;
+}
+
+.failed {
+  color: $brand-sunset!important;
+}
+
+.divider {
+  height: 1px;
+  border-top: 1px solid $brand-gray;
+}
+
+.pager {
+  padding: 20px 0;
+  i {
+    margin: 0;
+  }
+  a {
+    color: $brand-secondary;
+    font-size: 14px;
+  }
+  .prev {
+    display: none;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  .next {
+    display: none;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+}
+
+.hidden {
+  display: none;
+}
