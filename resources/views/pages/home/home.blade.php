@@ -73,7 +73,7 @@
             @for($i = 0; $i < count($top_stores); $i++)
             <a href="{{route('offers',$top_stores[$i]->store_id)}}" class="top-stores-card">
                 <div class="top-stores-logo">
-                    <img class="stores-logo" src="{{asset($top_stores[$i]->store_logo)}}" alt="{{$top_stores[$i]->store_name}}">
+                    <img class="stores-logo" src="//cdn.grabbthedeal.in/{{$top_stores[$i]->store_logo}}" alt="{{$top_stores[$i]->store_name}}">
                 </div>
                 <div class="top-stores-body">
                     <p class="top-stores-cb">Upto
@@ -109,7 +109,7 @@
                             <h3></h3>
                         </div>
                         <div class="offers-card-img pull-left">
-                            <img src="{{asset($offersStoreImg[$key]['store_img'])}}">
+                            <img src="//cdn.grabbthedeal.in/{{$offersStoreImg[$key]['store_img']}}">
                         </div>
                         <div class="offers-card-extras pull-right">
                             <p class="offer-featured button green outline pull-right">Featured</p>
