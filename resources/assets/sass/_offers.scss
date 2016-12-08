@@ -249,7 +249,8 @@
         font-size: 14px;
         line-height: 22px;
         color: lighten($brand-primary,10%);
-        margin-bottom: 25px;//
+        margin-bottom: 25px;
+        margin-top: 10px;
         &.more {
           display: none;
         }
@@ -306,6 +307,7 @@
       padding: 15px 0 15px 25px;
       border-top: 1px solid $brand-gray;
       background: lighten($brand-gray,4%);
+      font-weight: 300;
       .content-block {
         display: inline-block;
         width: 150px;
@@ -339,6 +341,7 @@
 
 .store-footer-details {
   margin-top: 30px;
+  font-weight: 400;
   h3 {
     color: lighten($brand-black,30%);
     margin: 0;
@@ -352,6 +355,7 @@
   ul {
     margin: 5px 0 0 30px;
     padding: 0;
+    //font
     li {
       margin: 0 0 5px 0;
       font-size: 14px;

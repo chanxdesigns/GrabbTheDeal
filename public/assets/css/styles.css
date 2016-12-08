@@ -1800,7 +1800,8 @@ header {
       font-size: 14px;
       line-height: 22px;
       color: #4d4d4d;
-      margin-bottom: 25px; }
+      margin-bottom: 25px;
+      margin-top: 10px; }
       .offers-list-wrapper .offer-desc .offer-desc-text.more {
         display: none; }
       .offers-list-wrapper .offer-desc .offer-desc-text ul {
@@ -1844,7 +1845,8 @@ header {
   .offers-list-wrapper .offer-footer {
     padding: 15px 0 15px 25px;
     border-top: 1px solid #F1F1F1;
-    background: #fbfbfb; }
+    background: #fbfbfb;
+    font-weight: 300; }
     .offers-list-wrapper .offer-footer .content-block {
       display: inline-block;
       width: 150px; }
@@ -1868,7 +1870,8 @@ header {
     color: #F14D76; }
 
 .store-footer-details {
-  margin-top: 30px; }
+  margin-top: 30px;
+  font-weight: 400; }
   .store-footer-details h3 {
     color: #4d4d4d;
     margin: 0; }

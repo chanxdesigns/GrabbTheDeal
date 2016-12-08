@@ -20,8 +20,8 @@
                 </div>
                 <div class="center-tab pull-left">
                     <h3 class="header-text">{{$store->store_name}} Coupons, Deals and Offers</h3>
-                    <div class="body-text less">@if (str_word_count($store->store_details) > 50) {!! join(" ",array_slice(explode(' ', html_entity_decode($store->store_details)),0,49)) !!} ... <a href="#" class="see-more-text pull-right">See More</a>@else {!! html_entity_decode($store->store_details) !!} @endif</div>
-                    <div class="body-text more">{!! html_entity_decode($store->store_details) !!} <a href="#" class="see-more-text pull-right">See Less</a></div>
+                    <div class="body-text less">@if (str_word_count($store->store_details) > 50) {!! join(" ",array_slice(explode(' ', $store->store_details),0,49)) !!} ... <a href="#" class="see-more-text pull-right">See More</a>@else {!! $store->store_details !!} @endif</div>
+                    <div class="body-text more">{!! $store->store_details !!} <a href="#" class="see-more-text pull-right">See Less</a></div>
                 </div>
                 <div class="right-tab pull-right">
                         <ul class="breadcrumb-panel pull-right">
@@ -67,8 +67,8 @@
                                     </div>
                                     <div class="offer-desc">
                                         <a href="{{secure_url('/offer-redirect',$offer->offer_id)}}" class="offer-title @if (is_null(Request::cookie('user_id'))) signin @endif">{{$offer->offer_name}}</a>
-                                        <div class="offer-desc-text less">@if (str_word_count($offer->offer_details) > 37) {!! join(" ",array_slice(explode(' ', html_entity_decode($offer->offer_details)),0,36)) !!} ... <a href="#" class="see-more-text pull-right">See More</a>@else {!! html_entity_decode($offer->offer_details) !!} @endif</div>
-                                        <div class="offer-desc-text more">{!! html_entity_decode($offer->offer_details) !!} <a href="#" class="see-more-text pull-right">See Less</a></div>
+                                        <div class="offer-desc-text less">@if (str_word_count($offer->offer_details) > 37) {!! join(" ",array_slice(explode(' ', $offer->offer_details),0,36)) !!} ... <a href="#" class="see-more-text pull-right">See More</a>@else {!! $offer->offer_details !!} @endif</div>
+                                        <div class="offer-desc-text more">{!! $offer->offer_details !!} <a href="#" class="see-more-text pull-right">See Less</a></div>
                                     </div>
                                     <div class="offer-action">
                                         <a class="button featured green outline">Featured</a>
@@ -100,7 +100,7 @@
                     @endif
                     <div class="store-footer-details">
                         <h3>About {{$store->store_name}}</h3>
-                        <div>{!! html_entity_decode($store->store_details) !!}</div>
+                        <p>{!! $store->store_details !!}</p>
                     </div>
                 </div>
             </div>

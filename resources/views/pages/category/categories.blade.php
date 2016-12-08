@@ -71,8 +71,8 @@
                                             </div>
                                             <div class="offer-desc">
                                                 <a href="{{secure_url('/offer-redirect',$offer->offer_id)}}" class="offer-title @if (is_null(Request::cookie('user_id'))) signin @endif">{{$offer->offer_name}}</a>
-                                                <p class="offer-desc-text less">@if (str_word_count($offer->offer_details) > 37) {!! join(" ",array_slice(explode(' ', html_entity_decode($offer->offer_details)),0,36)) !!} ... <a href="#" class="see-more-text pull-right">See More</a>@else {!! html_entity_decode($offer->offer_details) !!} @endif</p>
-                                                <p class="offer-desc-text more">{!! html_entity_decode($offer->offer_details) !!} <a href="#" class="see-more-text pull-right">See Less</a></p>                                            </div>
+                                                <p class="offer-desc-text less">@if (str_word_count($offer->offer_details) > 37) {!! join(" ",array_slice(explode(' ', $offer->offer_details),0,36)) !!} ... <a href="#" class="see-more-text pull-right">See More</a>@else {!! $offer->offer_details !!} @endif</p>
+                                                <p class="offer-desc-text more">{!! $offer->offer_details !!} <a href="#" class="see-more-text pull-right">See Less</a></p>                                            </div>
                                             <div class="offer-action">
                                                 <a class="button featured green outline">Featured</a>
                                                 <a href="{{secure_url('/offer-redirect',$offer->offer_id)}}" class="button gtd @if (is_null(Request::cookie('user_id'))) signin @endif">Grabb The Deal <span class="ion-android-arrow-forward pull-right"></span></a>
