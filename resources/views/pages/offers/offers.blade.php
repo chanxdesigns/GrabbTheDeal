@@ -100,7 +100,7 @@
                     @endif
                     <div class="store-footer-details">
                         <h3>About {{$store->store_name}}</h3>
-                        <p>{!! html_entity_decode($store->store_details) !!}</p>
+                        <div>{!! html_entity_decode($store->store_details) !!}</div>
                     </div>
                 </div>
             </div>
