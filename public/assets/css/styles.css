@@ -1803,6 +1803,13 @@ header {
       margin-bottom: 25px; }
       .offers-list-wrapper .offer-desc .offer-desc-text.more {
         display: none; }
+      .offers-list-wrapper .offer-desc .offer-desc-text ul {
+        margin: 5px 0 10px 30px;
+        padding: 0; }
+        .offers-list-wrapper .offer-desc .offer-desc-text ul li {
+          margin: 0 0 5px 0; }
+          .offers-list-wrapper .offer-desc .offer-desc-text ul li:last-of-type {
+            margin-bottom: 0; }
     .offers-list-wrapper .offer-desc .see-more-text {
       font-weight: 700;
       color: #59ABE3;

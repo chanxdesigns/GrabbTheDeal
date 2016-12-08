@@ -253,6 +253,16 @@
         &.more {
           display: none;
         }
+        ul {
+          margin: 5px 0 10px 30px;
+          padding: 0;
+          li {
+            margin: 0 0 5px 0;
+            &:last-of-type {
+              margin-bottom: 0;
+            }
+          }
+        }
       }
       .see-more-text {
         font-weight: 700;

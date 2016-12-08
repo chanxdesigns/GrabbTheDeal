@@ -67,8 +67,8 @@
                                     </div>
                                     <div class="offer-desc">
                                         <a href="{{secure_url('/offer-redirect',$offer->offer_id)}}" class="offer-title @if (is_null(Request::cookie('user_id'))) signin @endif">{{$offer->offer_name}}</a>
-                                        <p class="offer-desc-text less">@if (str_word_count($offer->offer_details) > 37) {!! join(" ",array_slice(explode(' ', html_entity_decode($offer->offer_details)),0,36)) !!} ... <a href="#" class="see-more-text pull-right">See More</a>@else {!! html_entity_decode($offer->offer_details) !!} @endif</p>
-                                        <p class="offer-desc-text more">{!! html_entity_decode($offer->offer_details) !!} <a href="#" class="see-more-text pull-right">See Less</a></p>
+                                        <div class="offer-desc-text less">@if (str_word_count($offer->offer_details) > 37) {!! join(" ",array_slice(explode(' ', html_entity_decode($offer->offer_details)),0,36)) !!} ... <a href="#" class="see-more-text pull-right">See More</a>@else {!! html_entity_decode($offer->offer_details) !!} @endif</div>
+                                        <div class="offer-desc-text more">{!! html_entity_decode($offer->offer_details) !!} <a href="#" class="see-more-text pull-right">See Less</a></div>
                                     </div>
                                     <div class="offer-action">
                                         <a class="button featured green outline">Featured</a>
