@@ -186,7 +186,6 @@
     $('.see-more-text').click(function (e: Event) {
         e.preventDefault();
         var elem = $(this).parent().parent();
-        console.log(elem);
         if (elem.find('.less').css('display') === "block") {
             elem.find('.less').hide();
             elem.find('.more').show();
