@@ -58,7 +58,7 @@
                                             </div>
                                             <div class="store-card-details">
                                                 <input type="hidden" id="hid-count" value="{{$store['offers_count']}}">
-                                                <input type="hidden" id="hid-cashback" value="@if (!is_null($store['store_cashback'])){{$store['store_cashback']}}% @else Rs. {{$store['store_cashback_amount']}} @endif">
+                                                <input type="hidden" id="hid-cashback" value="@if ($store['store_cashback']){{$store['store_cashback']}}% @else Rs. {{$store['store_cashback_amount']}} @endif">
                                                 <p>@if ($store['offers_count']) {{$store['offers_count']}} @else No @endif
                                                     @if (!is_null($store['offers_count']) && $store['offers_count'] > 1) Offers @else Offer @endif Available</p>
                                             </div>
