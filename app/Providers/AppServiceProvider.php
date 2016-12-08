@@ -2,6 +2,10 @@
 
 namespace App\Providers;
 
+use Illuminate\Http\Request;
+use Illuminate\Routing\Route;
+use Illuminate\Routing\RouteCollection;
+use Illuminate\Routing\UrlGenerator;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
@@ -13,12 +17,9 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot(Request $request)
     {
-        if (App::environment('production')) {
-            dump(App::environment('production'));
-            URL::forceSchema('https');
-        }
+        //
     }
 
     /**

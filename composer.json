@@ -13,7 +13,8 @@
         "mailgun/mailgun-php": "~2.0",
         "php-http/guzzle6-adapter": "1.1.*",
         "ramsey/uuid": ">=3.0",
-        "ircmaxell/random-lib": "*"
+        "ircmaxell/random-lib": "*",
+        "fideloper/proxy": "^3.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

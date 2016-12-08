@@ -21,7 +21,7 @@
                                 </div>
                                 <div class="category-details">
                                     <h3>{{$category['offers_count']}} offers available</h3>
-                                    <p>Upto <strong>{{$category['max_cashback']}}%</strong> GTD Cashback</p>
+                                    {{--<p>Upto <strong>{{$category['max_cashback']}}%</strong> GTD Cashback</p>--}}
                                 </div>
                             </div>
                         </a>
