@@ -51,8 +51,8 @@
                         <div class="stores-wrapper">
                             <ul>
                                 @foreach($stores as $store)
-                                    <li class="stores-list">
-                                        <a class="stores-card" href="/offers/{{$store['store_id']}}" id="{{$store['store_id']}}">
+                                    <li class="stores-list" id="{{$store['store_id']}}">
+                                        <a class="stores-card" href="/offers/{{$store['store_id']}}">
                                             <div class="store-card-header">
                                                 <img src="//cdn.grabbthedeal.in/{{$store['store_logo']}}" class="logo" title="{{$store['store_name']}}" alt="{{$store['store_name']}}">
                                             </div>
