@@ -63,7 +63,7 @@
                                                     @if (!is_null($store['offers_count']) && $store['offers_count'] > 1) Offers @else Offer @endif Available</p>
                                             </div>
                                             <div class="store-card-footer">
-                                                <p class="store-footer-text">Upto @if (!is_null($store['store_cashback'])){{$store['store_cashback']}}% @else Rs. {{$store['store_cashback_amount']}} @endif Cashback</p>
+                                                <p class="store-footer-text">Upto @if ($store['store_cashback']){{$store['store_cashback']}}% @else Rs. {{$store['store_cashback_amount']}} @endif Cashback</p>
                                             </div>
                                         </a>
                                     </li>
