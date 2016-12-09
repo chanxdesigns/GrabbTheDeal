@@ -19,8 +19,8 @@
     <link rel="stylesheet" type="text/css" href="//cdn.grabbthedeal.in/assets/css/perfect-scrollbar.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.grabbthedeal.in/assets/css/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.grabbthedeal.in/assets/css/owl.theme.min.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.grabbthedeal.in/assets/css/styles.min.css">
-    {{--<link rel="stylesheet" type="text/css" href="{{asset('assets/css/styles.css')}}">--}}
+    {{--<link rel="stylesheet" type="text/css" href="//cdn.grabbthedeal.in/assets/css/styles.min.css">--}}
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/styles.css')}}">
 
     <!-- Google Analytics -->
     <script>
@@ -160,12 +160,6 @@
     <div class="main-footer">
         <div class="container">
             <div class="column-2">
-                <div class="footer-content">
-                    <img src="//cdn.grabbthedeal.in/assets/img/gtd-logo-footer.png" class="footer-logo">
-                    <!--<p class="footer-content-text">Grabb The Deal is an affiliate marketing company focused on providing cashbacks and best deals to our users. We strive to be at the forefront of the cashback industry and innovate new ideas so that our end users can reap the benefits. We at Grabb The Deal loves free money and what is the better way to earn and get rewarded everytime you shop from our partner stores.</p>-->
-                </div>
-            </div>
-            <div class="column-2">
                 <div class="footer-nav">
                     <h3 class="footer-title">Navigation</h3>
                     <ul>
@@ -194,6 +188,10 @@
                         <li><a href="{{secure_url('/terms-conditions')}}">Terms & Conditions</a></li>
                     </ul>
                 </div>
+                <div class="footer-nav">
+                    <h3 class="footer-title">Shop Securely</h3>
+                    <img src="{{asset('assets/img/comodo_secure_seal_100x85_transp.png')}}" style="margin: -20px 0 0 0;">
+                </div>
             </div>
             <div class="column-2">
                 <div class="footer-nav">
@@ -206,7 +204,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="column-2">
+            <div class="column-4">
                 <div class="footer-nav">
                     <h3 class="footer-title">Subscribe Us</h3>
                     <form id="footer-subscribe" action="//grabbthedeal.us14.list-manage.com/subscribe/post?u=3659ab6ce5796e871477790f2&amp;id=2729b5e6e7" method="post" name="mc-embedded-subscribe-form" novalidate>
@@ -239,7 +237,7 @@
 <script src="//cdn.grabbthedeal.in/assets/js/bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js"></script>
 <script src="//cdn.grabbthedeal.in/assets/js/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
 <script src="//cdn.grabbthedeal.in/assets/js/modernizr-output.js"></script>
-<script src="//cdn.grabbthedeal.in/assets/js/build/app.min.js"></script>
-{{--<script src="{{asset('assets/js/build/app.min.js')}}"></script>--}}
+{{--<script src="//cdn.grabbthedeal.in/assets/js/build/app.min.js"></script>--}}
+<script src="{{asset('assets/js/build/app.min.js')}}"></script>
 </body>
 </html>

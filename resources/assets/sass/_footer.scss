@@ -112,7 +112,7 @@ footer {
           border-radius: 2px;
           padding: 5px;
           margin-bottom: 10px;
-          width: 200px;
+          width: 400px;
           font-size: 12px;
           font-family: $primary-font;
           @include mkBoxSizing(border-box);
@@ -136,7 +136,7 @@ footer {
           height: 35px;
           border-radius: 2px;
           border: 1px solid $brand-blue;
-          width: 200px;
+          width: 400px;
           font-size: 14px;
           font-weight: 700;
           @include mkBoxSizing(border-box);
