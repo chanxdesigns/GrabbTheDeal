@@ -3396,7 +3396,7 @@ footer .main-footer {
     border-radius: 2px;
     padding: 5px;
     margin-bottom: 10px;
-    width: 200px;
+    width: 400px;
     font-size: 12px;
     font-family: "Avenir LT Std", sans-serif;
     -webkit-box-sizing: border-box;
@@ -3418,7 +3418,7 @@ footer .main-footer {
     height: 35px;
     border-radius: 2px;
     border: 1px solid #008DE2;
-    width: 200px;
+    width: 400px;
     font-size: 14px;
     font-weight: 700;
     -webkit-box-sizing: border-box;
