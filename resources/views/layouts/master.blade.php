@@ -190,7 +190,7 @@
                 </div>
                 <div class="footer-nav">
                     <h3 class="footer-title">Shop Securely</h3>
-                    <img src="{{asset('assets/img/comodo_secure_seal_100x85_transp.png')}}" style="margin: -20px 0 0 0;">
+                    <img src="//cdn.grabbthedeal.in/assets/img/comodo_secure_seal_100x85_transp.png" style="margin: -20px 0 0 0;">
                 </div>
             </div>
             <div class="column-2">
