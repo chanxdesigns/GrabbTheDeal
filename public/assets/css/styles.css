@@ -1614,8 +1614,8 @@ header {
       .top-panel .left-tab .main-image-wrapper .main-image {
         display: block;
         margin: 20px auto 0;
-        width: 150px;
-        height: auto; }
+        width: auto;
+        height: 50px; }
     .top-panel .left-tab .header-text {
       font-size: 30px;
       font-weight: 500;

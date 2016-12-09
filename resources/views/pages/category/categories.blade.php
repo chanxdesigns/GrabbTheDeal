@@ -60,9 +60,9 @@
                                     @foreach($offers as $i => $offer)
                                         <li class="offer-list-item">
                                             <div class="offer-amount">
-                                                @if (!is_null($offer->offer_cashback))
+                                                @if ($offer->offer_cashback)
                                                     <h3 class="cashback-amount-text">{{$offer->offer_cashback}}%<br>OFF</h3>
-                                                @elseif(!is_null($offer->offer_cashback_amount))
+                                                @elseif($offer->offer_cashback_amount)
                                                     <h3 class="cashback-amount-text">Rs.{{$offer->offer_cashback_amount}}<br>OFF</h3>
                                                 @elseif(!is_null($offer->offer_coupon_code))
                                                     <h3 class="cashback-amount-text">{{$offer->offer_coupon_code}}</h3>
