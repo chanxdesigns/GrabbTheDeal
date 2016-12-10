@@ -4,7 +4,7 @@
     Route - www.grabbthedeal.in/store/{store}
 -----------------------------------------}}
 @extends('layouts.master')
-@section('title',$store->store_name.' Offers')
+@section('title',$store->store_name.' Offers, Coupons & Cashbacks')
 @section('content')
     <div class="background gray">
         <div class="top-pad"></div>
