@@ -4,7 +4,10 @@
 .top-panel {
   background: darken($brand-secondary,35%);
   background-size: cover;
-  padding: 20px 0;
+  .top-panel-overlay {
+    background: transparentize($brand-black, 0.6);
+    padding: 20px 0;
+  }
   .left-tab {
     position: relative;
     width: 198px;

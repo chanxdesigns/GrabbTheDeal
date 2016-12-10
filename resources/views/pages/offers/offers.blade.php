@@ -9,26 +9,28 @@
     <div class="background gray">
         <div class="top-pad"></div>
         <div class="top-panel">
-            <input type="hidden" value="{{$store->stores_img}}">
-            <div class="container">
-                <div class="left-tab pull-left">
-                    <div class="main-image-wrapper">
-                        <img class="main-image" src="//cdn.grabbthedeal.in/{{$store->store_logo}}">
+            <div class="top-panel-overlay">
+                <input type="hidden" value="{{$store->stores_img}}">
+                <div class="container">
+                    <div class="left-tab pull-left">
+                        <div class="main-image-wrapper">
+                            <img class="main-image" src="//cdn.grabbthedeal.in/{{$store->store_logo}}">
+                        </div>
+                        <p class="subtitle-text">{{$offers_count}} offers available</p>
+                        <a href="{{secure_url('/store-redirect',$store->store_id)}}" title="Shop from {{strtoupper($store->store_name)}} now" class="button primary outline">SHOP NOW</a>
                     </div>
-                    <p class="subtitle-text">{{$offers_count}} offers available</p>
-                    <a href="{{secure_url('/store-redirect',$store->store_id)}}" title="Shop from {{strtoupper($store->store_name)}} now" class="button primary outline">SHOP NOW</a>
-                </div>
-                <div class="center-tab pull-left">
-                    <h3 class="header-text">{{$store->store_name}} Coupons, Deals and Offers</h3>
-                    <div class="body-text less">@if (str_word_count($store->store_details) > 50) {!! join(" ",array_slice(explode(' ', $store->store_details),0,49)) !!} ... <a href="#" class="see-more-text pull-right">See More</a>@else {!! $store->store_details !!} @endif</div>
-                    <div class="body-text more">{!! $store->store_details !!} <a href="#" class="see-more-text pull-right">See Less</a></div>
-                </div>
-                <div class="right-tab pull-right">
+                    <div class="center-tab pull-left">
+                        <h3 class="header-text">{{$store->store_name}} Coupons, Deals and Offers</h3>
+                        <div class="body-text less">@if (str_word_count($store->store_details) > 50) {!! join(" ",array_slice(explode(' ', $store->store_details),0,49)) !!} ... <a href="#" class="see-more-text pull-right">See More</a>@else {!! $store->store_details !!} @endif</div>
+                        <div class="body-text more">{!! $store->store_details !!} <a href="#" class="see-more-text pull-right">See Less</a></div>
+                    </div>
+                    <div class="right-tab pull-right">
                         <ul class="breadcrumb-panel pull-right">
                             <li class="breadcrumb-link"><a href="{{secure_url('/')}}">Home</a></li>
                             <li class="breadcrumb-link"><a href="{{route('stores')}}">Stores</a></li>
                             <li class="breadcrumb-link">{{$store->store_name}}</li>
                         </ul>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1594,8 +1594,10 @@ header {
  */
 .top-panel {
   background: #144e76;
-  background-size: cover;
-  padding: 20px 0; }
+  background-size: cover; }
+  .top-panel .top-panel-overlay {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px 0; }
   .top-panel .left-tab {
     position: relative;
     width: 198px;
