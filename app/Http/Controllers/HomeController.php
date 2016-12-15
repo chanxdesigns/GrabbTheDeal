@@ -17,8 +17,9 @@ class HomeController extends Controller
     // This function readies the Home Page with the latest
     // Data and Stuff
     public function home () {
-        // Data to be returned to the Home View
+        // Hot Deals Card View
         $offers = Offer::where('offer_featured',true)
+            ->where('offer_validity', '>', Carbon::now())
             ->orderBy('offer_id','desc')
             ->take(12)
             ->get();
