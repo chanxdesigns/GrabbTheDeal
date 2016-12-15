@@ -56,7 +56,7 @@
     $('#sort').change(GTDLib.sortOffers);
     var main_carousel = $('.main-featured');
     main_carousel.owlCarousel({
-        items: 1,
+        items: 5,
         responsive: false,
         pagination: false,
         autoPlay: 2000,

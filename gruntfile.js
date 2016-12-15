@@ -93,6 +93,17 @@ module.exports = function (grunt) {
                 dest: 'public/assets/js/bower_components/'
             }
         },
+        assets_versioning: {
+            options: {
+                tag: 'hash',
+                hashLength: 10
+            },
+            target: {
+                options: {
+                    tasks: ['uglify:minify']
+                }
+            }
+        },
         watch: {
             css: {
                 files: 'resources/assets/sass/*.scss',
@@ -119,6 +130,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-contrib-uglify");
     grunt.loadNpmTasks("grunt-contrib-concat");
     grunt.loadNpmTasks("grunt-contrib-cssmin");
+    grunt.loadNpmTasks('grunt-assets-versioning');
     grunt.loadNpmTasks("grunt-contrib-watch");
     grunt.loadNpmTasks("grunt-modernizr");
 

@@ -242,7 +242,7 @@
 <script src="//cdn.grabbthedeal.in/assets/js/bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js"></script>
 <script src="//cdn.grabbthedeal.in/assets/js/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
 <script src="//cdn.grabbthedeal.in/assets/js/modernizr-output.js"></script>
-<script src="//cdn.grabbthedeal.in/assets/js/build/app.min.js"></script>
+<script src="//cdn.grabbthedeal.in/assets/js/build/app.min.de936d6702.js"></script>
 {{--<script src="{{asset('assets/js/build/app.min.js')}}"></script>--}}
 </body>
 </html>
