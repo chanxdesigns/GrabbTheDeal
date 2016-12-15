@@ -87,7 +87,7 @@
      */
     let main_carousel = $('.main-featured');
     main_carousel.owlCarousel({
-        items: 5,
+        items: 1,
         responsive: false,
         pagination: false,
         autoPlay: 2000,

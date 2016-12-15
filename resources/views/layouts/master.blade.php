@@ -17,8 +17,7 @@
     <link href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="//cdn.grabbthedeal.in/assets/css/grid.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.grabbthedeal.in/assets/css/perfect-scrollbar.min.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.grabbthedeal.in/assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.grabbthedeal.in/assets/css/owl.theme.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.grabbthedeal.in/assets/css/owl.carousel.min.ab12cd.css">
     <link rel="stylesheet" type="text/css" href="//cdn.grabbthedeal.in/assets/css/styles.min.css">
     {{--<link rel="stylesheet" type="text/css" href="{{asset('assets/css/styles.css')}}">--}}
 
@@ -240,9 +239,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.grabbthedeal.in/assets/js/bower_components/js-cookie/src/js.cookie.js"></script>
 <script src="//cdn.grabbthedeal.in/assets/js/bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js"></script>
-<script src="//cdn.grabbthedeal.in/assets/js/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="//cdn.grabbthedeal.in/assets/js/bower_components/owl.carousel/dist/owl.carousel.min.ab12cd.js"></script>
 <script src="//cdn.grabbthedeal.in/assets/js/modernizr-output.js"></script>
-<script src="//cdn.grabbthedeal.in/assets/js/build/app.min.de936d6702.js"></script>
-{{--<script src="{{asset('assets/js/build/app.min.js')}}"></script>--}}
+<script src="//cdn.grabbthedeal.in/assets/js/build/app.min.084c6b3fcb.js"></script>
+{{--<script src="{{asset('assets/js/build/app.min.084c6b3fcb.js')}}"></script>--}}
 </body>
 </html>

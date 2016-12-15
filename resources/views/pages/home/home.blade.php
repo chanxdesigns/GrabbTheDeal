@@ -12,7 +12,7 @@
                 <div class="nav next pull-right"><img src="//cdn.grabbthedeal.in/assets/img/sliders/machine/right-chevron.svg"></div>
                 <div class="main-featured owl-carousel owl-theme">
                     @for($i = 0; $i < count($sliders["main_featured"]); $i++)
-                        <a href="{{route('offers',$sliders["main_featured"][$i]->slider_store)}}"><img class="slider-img" src="//cdn.grabbthedeal.in/{{$sliders["main_featured"][$i]->slider_img}}" title="{{$sliders["main_featured"][$i]->slider_name}}" alt="{{$sliders["main_featured"][$i]->slider_name}}"></a>
+                        <a href="{{route('offers',$sliders["main_featured"][$i]->slider_store)}}"><img class="" src="https://cdn.grabbthedeal.in/{{$sliders["main_featured"][$i]->slider_img}}" title="{{$sliders["main_featured"][$i]->slider_name}}" alt="{{$sliders["main_featured"][$i]->slider_name}}"></a>
                     @endfor
                 </div>
             </div>
@@ -49,7 +49,7 @@
                         @for($i = 0; $i < count($today_deals); $i++)
                             <li class="today-deals-card">
                                 <div class="card-image">
-                                    <img class="deal-img" src="//cdn.grabbthedeal.in/{{$today_deals[$i]["deal_img"]}}" title="{{$today_deals[$i]["deal_name"]}}" alt="{{$today_deals[$i]["deal_name"]}}">
+                                    <img class="deal-img" src="https://cdn.grabbthedeal.in/{{$today_deals[$i]["deal_img"]}}" title="{{$today_deals[$i]["deal_name"]}}" alt="{{$today_deals[$i]["deal_name"]}}">
                                     <div class="store-img">
                                         <img class="deal-store-img" src="//cdn.grabbthedeal.in/{{$today_deals[$i]["deal_store_logo"]}}" title="{{$today_deals[$i]["deal_store_name"]}}" alt="{{$today_deals[$i]["deal_store_name"]}}">
                                     </div>
