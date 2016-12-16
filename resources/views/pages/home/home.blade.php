@@ -29,8 +29,8 @@
     <div class="cta-hero top">
         <div class="container">
             <div class="cta-register">
-                <h3>Get <span>Rs. 150</span> free with your first confirmed cashback !!</h3>
-                <a href="#signup" class="button medium blue signup">Claim My Rs. 150 Now</a>
+                <h3>Get <span>Rs. 100</span> free with your first confirmed cashback !!</h3>
+                <a href="#signup" class="button medium blue signup">Claim My Rs. 100 Now</a>
             </div>
         </div>
     </div>
