@@ -36,36 +36,36 @@
     </div>
     @endif
 
-    <div class="today-deals-wrapper background gray">
-        <div class="container">
-            <div class="today-deals">
-                <h3 class="title">Today's Deals</h3>
-                <div class="container">
-                    <!-- Prev/Next Button -->
-                    <div class="arrow pull-left left"><i class="ion-chevron-left"></i></div>
-                    <div class="arrow pull-right right"><i class="ion-chevron-right"></i></div>
+    {{--<div class="today-deals-wrapper background gray">--}}
+        {{--<div class="container">--}}
+            {{--<div class="today-deals">--}}
+                {{--<h3 class="title">Today's Deals</h3>--}}
+                {{--<div class="container">--}}
+                    {{--<!-- Prev/Next Button -->--}}
+                    {{--<div class="arrow pull-left left"><i class="ion-chevron-left"></i></div>--}}
+                    {{--<div class="arrow pull-right right"><i class="ion-chevron-right"></i></div>--}}
 
-                    <ul id="today-deals-slider" class="owl-carousel owl-theme" data-click-source="deals-slider">
-                        @for($i = 0; $i < count($today_deals); $i++)
-                            <li class="today-deals-card">
-                                <div class="card-image">
-                                    <img class="deal-img" src="https://cdn.grabbthedeal.in/{{$today_deals[$i]["deal_img"]}}" title="{{$today_deals[$i]["deal_name"]}}" alt="{{$today_deals[$i]["deal_name"]}}">
-                                    <div class="store-img">
-                                        <img class="deal-store-img" src="//cdn.grabbthedeal.in/{{$today_deals[$i]["deal_store_logo"]}}" title="{{$today_deals[$i]["deal_store_name"]}}" alt="{{$today_deals[$i]["deal_store_name"]}}">
-                                    </div>
-                                </div>
-                                <div class="card-details">
-                                    <a class="det-name" href="{{secure_url('/deal-redirect', $today_deals[$i]["deal_id"])}}" title="{{$today_deals[$i]["deal_name"]}}"><p class="deal-text">{{$today_deals[$i]["deal_name"]}}</p></a>
-                                    <p class="det-stat"><span class="pres">Rs. {{$today_deals[$i]["deal_new_price"]}}</span><span class="past">Rs. {{$today_deals[$i]["deal_old_price"]}}</span><span class="disc">Flat {{$today_deals[$i]["deal_discount"]}}% off</span></p>
-                                </div>
-                                <a href="{{secure_url('/deal-redirect', $today_deals[$i]["deal_id"])}}" target="_blank" class="button blue @if (is_null(Request::cookie('user_id'))) signin @endif">UPTO @if ($today_deals[$i]["deal_cashback"]) {{$today_deals[$i]["deal_cashback"]}}% @else RS. {{$today_deals[$i]["deal_cashback_amount"]}}@endif IN CASHBACK</a>
-                            </li>
-                        @endfor
-                    </ul>
-            </div>
-        </div>
-    </div>
-        </div>
+                    {{--<ul id="today-deals-slider" class="owl-carousel owl-theme" data-click-source="deals-slider">--}}
+                        {{--@for($i = 0; $i < count($today_deals); $i++)--}}
+                            {{--<li class="today-deals-card">--}}
+                                {{--<div class="card-image">--}}
+                                    {{--<img class="deal-img" src="https://cdn.grabbthedeal.in/{{$today_deals[$i]["deal_img"]}}" title="{{$today_deals[$i]["deal_name"]}}" alt="{{$today_deals[$i]["deal_name"]}}">--}}
+                                    {{--<div class="store-img">--}}
+                                        {{--<img class="deal-store-img" src="//cdn.grabbthedeal.in/{{$today_deals[$i]["deal_store_logo"]}}" title="{{$today_deals[$i]["deal_store_name"]}}" alt="{{$today_deals[$i]["deal_store_name"]}}">--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                                {{--<div class="card-details">--}}
+                                    {{--<a class="det-name" href="{{secure_url('/deal-redirect', $today_deals[$i]["deal_id"])}}" title="{{$today_deals[$i]["deal_name"]}}"><p class="deal-text">{{$today_deals[$i]["deal_name"]}}</p></a>--}}
+                                    {{--<p class="det-stat"><span class="pres">Rs. {{$today_deals[$i]["deal_new_price"]}}</span><span class="past">Rs. {{$today_deals[$i]["deal_old_price"]}}</span><span class="disc">Flat {{$today_deals[$i]["deal_discount"]}}% off</span></p>--}}
+                                {{--</div>--}}
+                                {{--<a href="{{secure_url('/deal-redirect', $today_deals[$i]["deal_id"])}}" target="_blank" class="button blue @if (is_null(Request::cookie('user_id'))) signin @endif">UPTO @if ($today_deals[$i]["deal_cashback"]) {{$today_deals[$i]["deal_cashback"]}}% @else RS. {{$today_deals[$i]["deal_cashback_amount"]}}@endif IN CASHBACK</a>--}}
+                            {{--</li>--}}
+                        {{--@endfor--}}
+                    {{--</ul>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
+        {{--</div>--}}
 
     <div class="top-stores-card-wrapper">
         <div class="container">
