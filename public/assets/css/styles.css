@@ -1097,9 +1097,14 @@ header {
   .today-deals-wrapper .today-deals .title {
     margin: 0 0 20px 0; }
   .today-deals-wrapper .today-deals .arrow {
-    top: 235px;
+    position: absolute;
+    top: 250px;
     font-size: 30px;
     color: #666666; }
+    .today-deals-wrapper .today-deals .arrow.left {
+      left: -31px; }
+    .today-deals-wrapper .today-deals .arrow.right {
+      right: -15px; }
   .today-deals-wrapper .today-deals #today-deals-slider {
     margin: 0;
     padding: 0; }

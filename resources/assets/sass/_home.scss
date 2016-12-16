@@ -346,9 +346,16 @@ header {
       margin: 0 0 20px 0;
     }
     .arrow {
-      top: 235px;
+      position: absolute;
+      top: 250px;
       font-size: 30px;
       color: lighten($brand-primary,20%);
+      &.left {
+        left: -31px;
+      }
+      &.right {
+        right: -15px;
+      }
     }
     #today-deals-slider {
       margin: 0;

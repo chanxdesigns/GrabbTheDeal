@@ -95,13 +95,18 @@ module.exports = function (grunt) {
         },
         assets_versioning: {
             options: {
-                tag: 'hash',
-                hashLength: 10
+                tag: 'date'
             },
             target: {
                 options: {
                     tasks: ['uglify:minify']
                 }
+            },
+            files: {
+                expand: true,
+                cwd: 'public/assets/css/',
+                src: 'styles.min.css',
+                dest: 'public/assets/css/versions/styles.min.css'
             }
         },
         watch: {
