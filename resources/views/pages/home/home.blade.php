@@ -55,7 +55,7 @@
                                     </div>
                                 </div>
                                 <div class="card-details">
-                                    <a class="det-name" href="" title="{{$today_deals[$i]["deal_name"]}}"><p class="deal-text">{{$today_deals[$i]["deal_name"]}}</p></a>
+                                    <a class="det-name" href="{{secure_url('/deal-redirect', $today_deals[$i]["deal_id"])}}" title="{{$today_deals[$i]["deal_name"]}}"><p class="deal-text">{{$today_deals[$i]["deal_name"]}}</p></a>
                                     <p class="det-stat"><span class="pres">Rs. {{$today_deals[$i]["deal_new_price"]}}</span><span class="past">Rs. {{$today_deals[$i]["deal_old_price"]}}</span><span class="disc">Flat {{$today_deals[$i]["deal_discount"]}}% off</span></p>
                                 </div>
                                 <a href="{{secure_url('/deal-redirect', $today_deals[$i]["deal_id"])}}" target="_blank" class="button blue @if (is_null(Request::cookie('user_id'))) signin @endif">UPTO @if ($today_deals[$i]["deal_cashback"]) {{$today_deals[$i]["deal_cashback"]}}% @else RS. {{$today_deals[$i]["deal_cashback_amount"]}}@endif IN CASHBACK</a>

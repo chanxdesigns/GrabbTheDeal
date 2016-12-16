@@ -97,12 +97,13 @@ module.exports = function (grunt) {
             options: {
                 tag: 'date'
             },
-            target: {
-                options: {
-                    tasks: ['uglify:minify']
-                }
+            js: {
+                expand: true,
+                cwd: 'public/assets/js/build/',
+                src: 'app.min.js',
+                dest: 'public/assets/js/build/versions/app.min.js'
             },
-            files: {
+            css: {
                 expand: true,
                 cwd: 'public/assets/css/',
                 src: 'styles.min.css',
