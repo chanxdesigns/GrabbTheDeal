@@ -19,7 +19,7 @@
 
             @for($i = 0; $i < count($sliders["sub_featured"]); $i++)
                 <div class="sub-featured @if($i == (count($sliders["sub_featured"]) - 1)) bottom @endif">
-                    <a href="{{route('offers',$sliders["sub_featured"][$i]->slider_store)}}"><img class="slider-img" src="//cdn.grabbthedeal.in/{{$sliders["sub_featured"][$i]->slider_img}}" title="{{$sliders["sub_featured"][$i]->slider_name}}" alt="{{$sliders["sub_featured"][$i]->slider_name}}"></a>
+                    <a href="@if ($sliders["sub_featured"][$i]->slider_url) {{$sliders["sub_featured"][$i]->slider_url}} @else {{route('offers',$sliders["sub_featured"][$i]->slider_store)}} @endif"><img class="slider-img" src="//cdn.grabbthedeal.in/{{$sliders["sub_featured"][$i]->slider_img}}" title="{{$sliders["sub_featured"][$i]->slider_name}}" alt="{{$sliders["sub_featured"][$i]->slider_name}}"></a>
                 </div>
             @endfor
         </div>
