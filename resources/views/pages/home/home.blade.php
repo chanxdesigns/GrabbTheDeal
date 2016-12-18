@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', "Free Cashbacks, Upto 100% Cashbacks On All Leading Stores In India")
+@section('title', "Coupons, Offers, Deals and Cashbacks Online India in 300+ Stores - Grabb The Deal")
 
 @section('content')
     {{--@parent--}}
