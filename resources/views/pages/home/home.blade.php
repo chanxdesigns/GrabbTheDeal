@@ -1,6 +1,9 @@
 @extends('layouts.master')
 
-@section('title', "Coupons, Offers, Deals and Cashbacks Online India in 300+ Stores - Grabb The Deal")
+@section('description', 'Get Coupons, Offers, Deals and Upto 100% Cashbacks for Shopping Online in 300+ Stores')
+@section('keywords', 'Free Cashbacks, 100% Cashbacks, Refunds, Online Shopping, India, Jabong, Amazon, Flipkart, Myntra, Koovs, Snapdeal, Junglee, Shopclues, Zovi, Voonik, Pepperfry, Happily Unmarried, Freecultr, Fashionandyou, Ebay')
+@section('title', "Coupons, Offers, Deals and Cashbacks Online India in 300+ Stores")
+@section('page-image', 'https://cdn.grabbthedeal.in/assets/img/meta-img/homepage-creative.jpg')
 
 @section('content')
     {{--@parent--}}

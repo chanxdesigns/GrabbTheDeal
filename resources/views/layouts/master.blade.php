@@ -3,14 +3,21 @@
 <head>
     <meta name="charset" content="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Coupons, Offers, Deals and Cashbacks Online India in 300+ Stores - Grabb The Deal">
-    <meta name="keywords" content="Free Cashbacks, 100% Cashbacks, Refunds, Online Shopping, India, Jabong, Amazon, Flipkart, Myntra, Koovs, Snapdeal, Junglee, Shopclues, Zovi, Voonik, Pepperfry, Happily Unmarried, Freecultr, Fashionandyou, Ebay">
+    <meta name="description" content="@yield('description')">
+    <meta name="keywords" content="@yield('keywords')">
     <meta name="token" content="{{ csrf_token() }}">
     <meta name="author" content="Chanx Singha <chandra.kumar@grabbthedeal.in">
+    <!-- Itemscope and Meta Properties -->
+    <meta itemprop="name" content="@yield('title')">
+    <meta itemprop="description" content="@yield('description')">
+    <meta itemprop="keywords" content="@yield('keywords')">
+    <meta itemprop="image" content="@yield('page-image')">
+    <!-- Page Title -->
     <title>@yield('title') - Grabb The Deal</title>
     <!-- Facebook OG tags -->
     <meta property="og:url" content="https://www.grabbthedeal.in">
     <meta property="og:description" content="Grabb The Deal provides upto 80% cashbacks on all online shopping from leading retailers in India.">
+    <meta property="og:image" content="@yield('page-image')">
     <meta property="og:title" content="@yield('title')">
 
     <!-- CSS and JavaScripts -->

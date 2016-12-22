@@ -38,7 +38,9 @@ class CategoryController extends Controller
                         "store_name" => $store->store_name,
                         "store_id" => $store->store_id,
                         "store_link" => $store->store_link,
-                        "store_logo" => $store->store_logo
+                        "store_logo" => $store->store_logo,
+                        "store_cashback" => $store->store_cashback,
+                        "store_cashback_amount" => $store->store_cashback_amount
                     ));
                 }
             }

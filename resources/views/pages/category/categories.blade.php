@@ -1,5 +1,21 @@
 @extends('layouts.master')
-@section('title','Categories Search')
+
+{{-- Heading Content --}}
+@if (empty($offers))
+    @section('description', 'Online Shopping Coupons & Cashbacks From Multiple Categories')
+    @section('keywords', 'Travel, Electronics & Gadgets, Home Appliances, Home & Decor, Gift Items, Fashion & Clothing, Mobiles, Computers & Laptops, Beauty, Food & Drink, Recharge & Bill Payments, Holidays Coupons, Deals, Offers, Cashback, 300+ Stores')
+    @section('title', 'Listing All Categories')
+    @section('page-image', 'https://cdn.grabbthedeal.in/'.$category[0]['category_img'])
+@else
+    @section('description')
+        {{$category[0]['category_name']}} Offers, Coupons & Cashbacks From
+        @foreach ($stores as $store)
+            {{$store['store_name']}},
+        @endforeach
+    @endsection
+    @section('keywords', $category[0]['category_name'].' Online Shopping', 'Deals', 'Offers', 'Cashback', 'Coupons')
+    @section('title', $category[0]['category_name'].' Deals, Offers, Coupons & Cashbacks')
+@endif
 
 @section('content')
     <div class="background gray">
