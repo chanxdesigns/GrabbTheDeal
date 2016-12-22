@@ -1,5 +1,7 @@
 @extends('layouts.master')
-@section('title', 'Redirecting to Offer Page')
+@section('description',$offer->offer_details)
+@section('keywords',str_slug($store->store_name,','))
+@section('title', $offer->offer_name)
 @section('content')
     <div class="top-pad"></div>
     <div class="container">
