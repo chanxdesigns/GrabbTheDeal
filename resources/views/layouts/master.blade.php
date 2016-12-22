@@ -15,12 +15,13 @@
     <!-- Page Title -->
     <title>@yield('title') - Grabb The Deal</title>
     <!-- Facebook OG tags -->
-    <meta property="og:url" content="https://www.grabbthedeal.in">
+    <meta property="og:url" content="https://www.grabbthedeal.in/{{Request::path()}}">
     <meta property="og:description" content="@yield('description')">
     <meta property="og:image" content="@yield('page-image')">
     <meta property="og:title" content="@yield('title') - Grabb The Deal">
 
     <!-- CSS and JavaScripts -->
+    <link rel="canonical" href="https://www.grabbthedeal.in/{{Request::path()}}">
     <link href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="//cdn.grabbthedeal.in/assets/css/grid.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.grabbthedeal.in/assets/css/perfect-scrollbar.min.css">

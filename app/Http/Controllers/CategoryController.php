@@ -3,9 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Custom\Helpers\Helpers;
-use Illuminate\Http\Request;
-
-use App\Http\Requests;
 use Illuminate\Support\Facades\DB;
 
 class CategoryController extends Controller
