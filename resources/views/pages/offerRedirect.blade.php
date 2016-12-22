@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('description',$offer->offer_details)
-@section('keywords',str_slug($offer->offer_name,','))
-@section('title', $offer->offer_name)
+@section('keywords','Myntra,'.str_slug($offer->offer_name,','))
+@section('title', 'Myntra - '.$offer->offer_name)
 @section('content')
     <div class="top-pad"></div>
     <div class="container">
