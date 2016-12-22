@@ -34,9 +34,9 @@
                         <div class="body-text more">{!! $store->store_details !!} <a href="#" class="see-more-text pull-right">See Less</a></div>
                     </div>
                     <div class="right-tab pull-right">
-                        <ul class="breadcrumb-panel pull-right">
-                            <li class="breadcrumb-link"><a href="{{secure_url('/')}}">Home</a></li>
-                            <li class="breadcrumb-link"><a href="{{route('stores')}}">Stores</a></li>
+                        <ul class="breadcrumb-panel pull-right" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+                            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumb-link"><a itemprop="name" href="{{secure_url('/')}}">Home</a></li>
+                            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumb-link"><a itemprop="name" href="{{route('stores')}}">Stores</a></li>
                             <li class="breadcrumb-link">{{$store->store_name}}</li>
                         </ul>
                     </div>
@@ -83,7 +83,7 @@
                                     </div>
                                     <div class="offer-action">
                                         <a class="button featured green outline">Featured</a>
-                                        <a href="{{secure_url('/offer-redirect',$offer->offer_id)}}" class="button gtd @if (is_null(Request::cookie('user_id'))) signin @endif">Grabb The Deal <span class="ion-android-arrow-forward pull-right"></span></a>
+                                        <a href="{{secure_url('/offer-redirect',[str_slug($offer->offer_name,'-'),$offer->offer_id])}}" class="button gtd @if (is_null(Request::cookie('user_id'))) signin @endif">Grabb The Deal <span class="ion-android-arrow-forward pull-right"></span></a>
                                     </div>
                                     <div class="offer-footer">
                                         <div class="content-block">

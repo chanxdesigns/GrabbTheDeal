@@ -96,7 +96,7 @@ Route::group(['middleware' => 'web'], function () {
     /**
      * Cashback Store Redirect Page
      */
-    Route::get('/offer-redirect/{offer_id}', 'OffersController@visitOfferRedirectPage');
+    Route::get('/offer-redirect/{offer_name}/{offer_id}', 'OffersController@visitOfferRedirectPage');
     Route::get('/load-offer/{offer_id}', 'OffersController@loadOffer');
     Route::get('/store-redirect/{store_id}', 'StoresController@visitStoreRedirectPage');
     Route::get('/load-store/{store_id}', 'StoresController@loadStore');
