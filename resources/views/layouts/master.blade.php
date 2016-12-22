@@ -8,7 +8,7 @@
     <meta name="token" content="{{ csrf_token() }}">
     <meta name="author" content="Chanx Singha <chandra.kumar@grabbthedeal.in">
     <!-- Itemscope and Meta Properties -->
-    <meta itemprop="name" content="@yield('title')">
+    <meta itemprop="name" content="@yield('title') - Grabb The Deal">
     <meta itemprop="description" content="@yield('description')">
     <meta itemprop="keywords" content="@yield('keywords')">
     <meta itemprop="image" content="@yield('page-image')">
@@ -18,7 +18,7 @@
     <meta property="og:url" content="https://www.grabbthedeal.in">
     <meta property="og:description" content="Grabb The Deal provides upto 80% cashbacks on all online shopping from leading retailers in India.">
     <meta property="og:image" content="@yield('page-image')">
-    <meta property="og:title" content="@yield('title')">
+    <meta property="og:title" content="@yield('title') - Grabb The Deal">
 
     <!-- CSS and JavaScripts -->
     <link href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
