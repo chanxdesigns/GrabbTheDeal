@@ -8,7 +8,7 @@
 @section('description')
     Get {{$store->store_name}} Offers, Deals, Coupons & Cashbacks Upto @if($store->store_cashback) {{$store->store_cashback}}% @else Rs. {{$store->store_cashback_amount}}@endif From Grabb The Deal.
 @endsection
-@section('keywords', $store->store_name, 'Offers', 'Deals', 'Coupons', 'Cashbacks', 'Online Shopping', 'India', '100% Cashback')
+@section('keywords', $store->store_name.', Offers, Deals, Coupons, Cashbacks, Online Shopping, India, 100% Cashback')
 @section('title')
     {{$store->store_name}} Offers, Coupons & Cashbacks. Upto @if($store->store_cashback) {{$store->store_cashback}}% @else Rs. {{$store->store_cashback_amount}}@endif in Cashback From
     @endsection
