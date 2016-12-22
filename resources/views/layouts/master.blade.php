@@ -16,7 +16,7 @@
     <title>@yield('title') - Grabb The Deal</title>
     <!-- Facebook OG tags -->
     <meta property="og:url" content="https://www.grabbthedeal.in">
-    <meta property="og:description" content="Grabb The Deal provides upto 80% cashbacks on all online shopping from leading retailers in India.">
+    <meta property="og:description" content="@yield('description')">
     <meta property="og:image" content="@yield('page-image')">
     <meta property="og:title" content="@yield('title') - Grabb The Deal">
 
