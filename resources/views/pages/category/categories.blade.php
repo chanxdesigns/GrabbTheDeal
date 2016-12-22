@@ -91,7 +91,7 @@
                                                 <div class="offer-desc-text more">{!! $offer->offer_details !!} <a href="#" class="see-more-text pull-right">See Less</a></div>                                            </div>
                                             <div class="offer-action">
                                                 <a class="button featured green outline">Featured</a>
-                                                <a href="{{secure_url('/offer-redirect',[str_slug($offer->offer_name,'-'),$offer->offer_id])}}" class="button gtd @if (is_null(Request::cookie('user_id'))) signin @endif">Grabb The Deal <span class="ion-android-arrow-forward pull-right"></span></a>
+                                                <a href="{{secure_url('/offer-redirect',$offer->offer_id)}}" class="button gtd @if (is_null(Request::cookie('user_id'))) signin @endif">Grabb The Deal <span class="ion-android-arrow-forward pull-right"></span></a>
                                             </div>
                                             <div class="offer-footer">
                                                 <div class="content-block">
