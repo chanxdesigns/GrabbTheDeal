@@ -1,6 +1,8 @@
 @extends('layouts.master')
 
-@section('title',"Exclusive " .ucfirst($search_query)." cashbacks and offers" )
+@section('description', 'Get exclusive '.ucfirst($search_query).' Offers, Deals, Coupons & Cashbacks by Shopping Online in India')
+@section('keywords', ucfirst($search_query). ', Offers, Deals, Coupons, Cashbacks', 'Online', 'Shopping', 'India')
+@section('title',"Exclusive " .ucfirst($search_query)." Coupons, Cashbacks, Deals & Offers" )
 
 @section('content')
     <div class="top-pad"></div>
