@@ -70,15 +70,15 @@
 
 <div class="header">
     {{-- Header --}}
-    <div class="top-header">
+    <div itemscope="" itemtype="http://schema.org/ItemList" class="top-header">
         <div class="container">
             <div class="left-content pull-left"></div>
             <div class="right-content pull-right">
                 <div class="utility-bar">
                     <ul>
-                        <li class="utility-link"><a href="{{secure_url('/contact')}}">Help</a></li>
-                        <li class="utility-link"><a href="{{secure_url('/faq')}}">FAQs</a></li>
-                        <li class="utility-link"><a href="{{secure_url('/how-it-works')}}">How It Works</a></li>
+                        <li class="utility-link"><a itemprop="name" href="{{secure_url('/contact')}}">Help</a></li>
+                        <li class="utility-link"><a itemprop="name" href="{{secure_url('/faq')}}">FAQs</a></li>
+                        <li class="utility-link"><a itemprop="name" href="{{secure_url('/how-it-works')}}">How It Works</a></li>
                     </ul>
                 </div>
             </div>
@@ -91,25 +91,27 @@
                 <a href="/"><img class="logo-img" src="//cdn.grabbthedeal.in/assets/img/gtd-logo.png"> </a>
             </div>
             <nav class="main-menu pull-left">
-                <ul class="main-menu-link-wrapper">
-                    <li class="main-menu-lists">
+                <ul class="main-menu-link-wrapper" itemscope="" itemtype="http://schema.org/ItemList">
+                    <li itemprop="itemListElement" itemscope="" class="main-menu-lists">
                         <a class="main-menu-link with-dd" href="#">Store deals <i class="ion-ios-arrow-down"></i></a><ul class="sub-menu">
                             <li class="sub-menu-lists">
                                 @for($i = 0; $i < count($top_stores); $i++)
-                                <a href="{{route('offers',$top_stores[$i]->store_id)}}" id="{{$top_stores[$i]->store_id}}" class="sub-menu-link">{{$top_stores[$i]->store_name}}</a>
+                                <a itemprop="name" href="{{route('offers',$top_stores[$i]->store_id)}}" id="{{$top_stores[$i]->store_id}}" class="sub-menu-link">{{$top_stores[$i]->store_name}}</a>
                                 @endfor
-                                <a href="{{secure_url('/stores')}}" class="sub-menu-link last">More Stores <i class="ion-android-arrow-forward"></i></a>
+                                <a itemprop="name" href="{{secure_url('/stores')}}" class="sub-menu-link last">More Stores <i class="ion-android-arrow-forward"></i></a>
                             </li>
-                        </ul></li>
-                    <li class="main-menu-lists">
+                        </ul>
+                    </li>
+                    <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList" class="main-menu-lists">
                         <a class="main-menu-link with-dd" href="#">Category deals <i class="ion-ios-arrow-down"></i></a><ul class="sub-menu">
                             <li class="sub-menu-lists">
                                 @for($i = 0; $i < count($top_categories); $i++)
-                                <a href="{{route('offersByCategories', $top_categories[$i]->category_id)}}" id="{{$top_categories[$i]->category_id}}" class="sub-menu-link">{{$top_categories[$i]->category_name}}</a>
+                                <a itemprop="name" href="{{route('offersByCategories', $top_categories[$i]->category_id)}}" id="{{$top_categories[$i]->category_id}}" class="sub-menu-link">{{$top_categories[$i]->category_name}}</a>
                                 @endfor
-                                <a href="{{secure_url('/categories')}}" class="sub-menu-link last">More Categories <i class="ion-android-arrow-forward"></i></a>
+                                <a itemprop="name" href="{{secure_url('/categories')}}" class="sub-menu-link last">More Categories <i class="ion-android-arrow-forward"></i></a>
                             </li>
-                        </ul></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
             <div class="header-search pull-left">
