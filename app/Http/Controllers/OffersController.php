@@ -136,7 +136,7 @@ class offersController extends Controller
      * @param $offer_id
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function visitOfferRedirectPage ($slug,$offer_id) {
+    public function visitOfferRedirectPage ($offer_id) {
         $offer = DB::table('offers')
             ->where('offer_id', $offer_id)
             ->first();

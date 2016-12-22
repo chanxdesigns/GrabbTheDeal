@@ -130,7 +130,6 @@ let GTDLib:GTDLibInterface = {
         // Redirect Function for Offers and Store Pages/Links
         let regex = /(\/offer-redirect|\/store-redirect|\/deal-redirect)\/?[A-Z0-9\-_]+\/?$/i;
         if (regex.test(path)) {
-            console.log("yea");
             let url: string;
             if (regex.exec(path)[1] === '/store-redirect') {
                 url = origin + '/load-store/' + $('#redirect-store-id').val().trim();
